@@ -1,5 +1,10 @@
 .navbar {
+  margin-bottom: 25px;
   &-brand {
     font-weight: 300;
+    cursor: default;
+  }
+  .nav-link {
+    cursor: pointer;
   }
 }
