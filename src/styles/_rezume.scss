@@ -4,6 +4,17 @@
   padding: 75px 100px;
   min-height: 80vh;
   margin-right: 20px;
+  position: relative;
+  &-contact {
+    position: absolute;
+    right: 100px;
+    top: 75px;
+    text-align: right;
+    p {
+      margin: 0;
+      font-size: 0.85em;
+    }
+  }
   h2 {
     font-weight: 300;
     text-transform: uppercase;
@@ -19,6 +30,7 @@
     }
     &.summary {
       color: #666;
+      text-align: justify;
       strong.position {
         font-weight: 600;
         color: #000;
