@@ -20,13 +20,13 @@ class App extends Component {
   };
   render() {
     return (
-      <>
+      <div className="rezume">
         <Header
           ChangePage={this.ChangePage}
           CurrentPage={this.state.CurrentPage}
         />
         <Main CurrentPage={this.state.CurrentPage} Resume={this.state.Resume} />
-      </>
+      </div>
     );
   }
 }
