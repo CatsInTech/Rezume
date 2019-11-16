@@ -1,5 +1,7 @@
 .navbar {
-  margin-bottom: 25px;
+  background-color: #003100;
+  margin-bottom: 50px;
+  @include box-shadow(3px, 0.25);
   &-brand {
     font-weight: 300;
     cursor: default;
