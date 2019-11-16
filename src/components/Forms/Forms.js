@@ -4,7 +4,6 @@ import FormElement from "./_FormElement";
 const Forms = ({ CurrentPage, SetSection, Resume }) => {
   return (
     <div className="rezume-forms">
-      {CurrentPage}
       {Resume[CurrentPage] &&
         Object.keys(Resume[CurrentPage]).map((fe, key) => (
           <FormElement
