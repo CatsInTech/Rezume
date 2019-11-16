@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/React-Resume-Builder/static/css/main.964a8fd8.chunk.css",
-    "main.js": "/React-Resume-Builder/static/js/main.7e1389b8.chunk.js",
-    "main.js.map": "/React-Resume-Builder/static/js/main.7e1389b8.chunk.js.map",
-    "runtime-main.js": "/React-Resume-Builder/static/js/runtime-main.75e4adaf.js",
-    "runtime-main.js.map": "/React-Resume-Builder/static/js/runtime-main.75e4adaf.js.map",
-    "static/js/2.b6fc503d.chunk.js": "/React-Resume-Builder/static/js/2.b6fc503d.chunk.js",
-    "static/js/2.b6fc503d.chunk.js.map": "/React-Resume-Builder/static/js/2.b6fc503d.chunk.js.map",
-    "index.html": "/React-Resume-Builder/index.html",
-    "precache-manifest.9d87cebcc2356b892eba13e0a63c95b8.js": "/React-Resume-Builder/precache-manifest.9d87cebcc2356b892eba13e0a63c95b8.js",
-    "service-worker.js": "/React-Resume-Builder/service-worker.js",
-    "static/css/main.964a8fd8.chunk.css.map": "/React-Resume-Builder/static/css/main.964a8fd8.chunk.css.map"
+    "main.css": "/static/css/main.2c4b5bf4.chunk.css",
+    "main.js": "/static/js/main.2602cab4.chunk.js",
+    "main.js.map": "/static/js/main.2602cab4.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e620e0f3.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e620e0f3.js.map",
+    "static/js/2.b6fc503d.chunk.js": "/static/js/2.b6fc503d.chunk.js",
+    "static/js/2.b6fc503d.chunk.js.map": "/static/js/2.b6fc503d.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.9c5ef359ce4d9a29b54d486d8aa66f12.js": "/precache-manifest.9c5ef359ce4d9a29b54d486d8aa66f12.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.2c4b5bf4.chunk.css.map": "/static/css/main.2c4b5bf4.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.75e4adaf.js",
+    "static/js/runtime-main.e620e0f3.js",
     "static/js/2.b6fc503d.chunk.js",
-    "static/css/main.964a8fd8.chunk.css",
-    "static/js/main.7e1389b8.chunk.js"
+    "static/css/main.2c4b5bf4.chunk.css",
+    "static/js/main.2602cab4.chunk.js"
   ]
 }
