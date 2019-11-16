@@ -1,6 +1,7 @@
 import React from "react";
+import Rezume from "../Rezume/Rezume";
 
-const Main = ({ CurrentPage }) => {
+const Main = ({ CurrentPage, Resume }) => {
   return (
     <div className="container-fluid rg-main">
       <div className="row">
@@ -8,9 +9,7 @@ const Main = ({ CurrentPage }) => {
           <div className="shadow-sm bg-white p-2">{CurrentPage}</div>
         </div>
         <div className="col-9">
-          <div className="shadow-sm bg-white p-5">
-            <h2>Boom! Your Resume..</h2>
-          </div>
+          <Rezume Resume={Resume} />
         </div>
       </div>
     </div>
