@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Header from "./Header/Header";
+import Main from "./Main/Main";
 
 class App extends Component {
   state = {
@@ -15,6 +16,7 @@ class App extends Component {
           ChangePage={this.ChangePage}
           CurrentPage={this.state.CurrentPage}
         />
+        <Main CurrentPage={this.state.CurrentPage} />
       </>
     );
   }
