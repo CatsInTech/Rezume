@@ -30,6 +30,7 @@ const FormElement = ({ Label, Value, Type, onChange }) => {
             return null;
         }
       })()}
+      {Value.length !== 0 && <span>{Label}</span>}
     </div>
   );
 };
