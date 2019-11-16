@@ -1,6 +1,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #f5f5f5;
+  @import "utils";
   @import "header";
   @import "main";
 }

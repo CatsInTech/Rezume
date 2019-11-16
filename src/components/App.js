@@ -7,7 +7,7 @@ class App extends Component {
     CurrentPage: "About",
     Resume: {
       About: {
-        Name: "Priyadharshini Raja Ram",
+        Name: "Priyadharshini Rajaram",
         Location: "London, United Kingdom",
         CurrentPosition: "Product Owner at Cloudroit",
         Summary:
