@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/React-Resume-Builder/static/css/main.964a8fd8.chunk.css",
-    "main.js": "/React-Resume-Builder/static/js/main.a7e523ea.chunk.js",
-    "main.js.map": "/React-Resume-Builder/static/js/main.a7e523ea.chunk.js.map",
+    "main.js": "/React-Resume-Builder/static/js/main.2ca062ce.chunk.js",
+    "main.js.map": "/React-Resume-Builder/static/js/main.2ca062ce.chunk.js.map",
     "runtime-main.js": "/React-Resume-Builder/static/js/runtime-main.75e4adaf.js",
     "runtime-main.js.map": "/React-Resume-Builder/static/js/runtime-main.75e4adaf.js.map",
     "static/js/2.b6fc503d.chunk.js": "/React-Resume-Builder/static/js/2.b6fc503d.chunk.js",
     "static/js/2.b6fc503d.chunk.js.map": "/React-Resume-Builder/static/js/2.b6fc503d.chunk.js.map",
     "index.html": "/React-Resume-Builder/index.html",
-    "precache-manifest.d983073579e11fed38914d0840d555b0.js": "/React-Resume-Builder/precache-manifest.d983073579e11fed38914d0840d555b0.js",
+    "precache-manifest.dbafef7d550d6882c9cb0bc8c8e3e83c.js": "/React-Resume-Builder/precache-manifest.dbafef7d550d6882c9cb0bc8c8e3e83c.js",
     "service-worker.js": "/React-Resume-Builder/service-worker.js",
     "static/css/main.964a8fd8.chunk.css.map": "/React-Resume-Builder/static/css/main.964a8fd8.chunk.css.map"
   },
@@ -16,6 +16,6 @@
     "static/js/runtime-main.75e4adaf.js",
     "static/js/2.b6fc503d.chunk.js",
     "static/css/main.964a8fd8.chunk.css",
-    "static/js/main.a7e523ea.chunk.js"
+    "static/js/main.2ca062ce.chunk.js"
   ]
 }
