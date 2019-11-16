@@ -2,6 +2,8 @@
   @include box-shadow(5px);
   background-color: #fff;
   padding: 75px 100px;
+  min-height: 80vh;
+  margin-right: 20px;
   h2 {
     font-weight: 300;
     text-transform: uppercase;
