@@ -1,0 +1,15 @@
+.rezume-forms {
+  margin-left: 20px;
+  &-item {
+    padding-bottom: 15px;
+    .form-control {
+      @include box-shadow(3px, 0.25);
+      background-color: #fff;
+      border: none;
+      &:active,
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

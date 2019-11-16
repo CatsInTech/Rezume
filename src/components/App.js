@@ -9,6 +9,9 @@ class App extends Component {
       About: {
         Name: "Priyadharshini Rajaram",
         Location: "London, United Kingdom",
+        Email: "priya@cloudroit.co.uk",
+        Website: "priya.ws",
+        Phone: "+44 7894561230",
         CurrentPosition: "Product Owner at Cloudroit",
         Summary:
           "Strong proficiency in JavaScript, including DOM manipulation and the JavaScript object model and thorough understanding of React JS and its core principles. Experience with popular React.js workflows (such as Flux or Redux). Familiarity with newer specifications of EcmaScript."
@@ -18,14 +21,22 @@ class App extends Component {
   ChangePage = CurrentPage => {
     this.setState({ CurrentPage });
   };
+  SetSection = (Section, Content) => {
+    this.setState({ Resume: { [Section]: Content } });
+  };
   render() {
     return (
       <div className="rezume">
         <Header
           ChangePage={this.ChangePage}
+          Resume={this.state.Resume}
           CurrentPage={this.state.CurrentPage}
         />
-        <Main CurrentPage={this.state.CurrentPage} Resume={this.state.Resume} />
+        <Main
+          CurrentPage={this.state.CurrentPage}
+          Resume={this.state.Resume}
+          SetSection={this.SetSection}
+        />
       </div>
     );
   }
