@@ -1,12 +1,12 @@
 import React from "react";
 import NavLink from "./_NavLink";
 
-const Header = ({ ChangePage, CurrentPage }) => {
+const Header = ({ ChangePage, CurrentPage, Resume }) => {
   return (
     <nav className="navbar navbar-expand navbar-dark justify-content-between rezume-header">
       <span className="navbar-brand mb-0 h1 col-1">Rezume</span>
       <ul className="navbar-nav">
-        {["About", "Sections", "Contact", "Design"].map(NavItem => (
+        {Object.keys(Resume).map(NavItem => (
           <NavLink
             Name={NavItem}
             Active={CurrentPage === NavItem}

@@ -13,6 +13,12 @@ class App extends Component {
         Summary:
           "Strong proficiency in JavaScript, including DOM manipulation and the JavaScript object model and thorough understanding of React JS and its core principles. Experience with popular React.js workflows (such as Flux or Redux). Familiarity with newer specifications of EcmaScript."
       },
+      Experience: [],
+      Education: [],
+      Awards: [],
+      Projects: [],
+      Skills: [],
+      Hobbies: [],
       Contact: {
         Email: "priya@cloudroit.co.uk",
         Website: "priya.ws",
