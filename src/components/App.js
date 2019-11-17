@@ -24,7 +24,7 @@ class App extends Component {
     this.setState({ CurrentPage });
   };
   SetSection = (Section, Content) => {
-    this.setState({ Resume: { [Section]: Content } });
+    this.setState({ Resume: { ...this.state.Resume, [Section]: Content } });
   };
   render() {
     return (
