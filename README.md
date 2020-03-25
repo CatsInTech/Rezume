@@ -1,1 +1,0 @@
-# Welcome to Cats in Tech Resume Builder 
