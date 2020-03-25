@@ -2,7 +2,7 @@
   "name": "react-resume-builder",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rezume.best",
+  "homepage": "https://app.rezume.best",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "node-sass": "^4.13.0",
@@ -16,7 +16,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build",
-    "dep": "git push && npm run build && echo rezume.best > build/CNAME && npm run deploy"
+    "dep": "git push && npm run build && echo app.rezume.best > build/CNAME && npm run deploy"
   },
   "eslintConfig": {
     "extends": "react-app"
