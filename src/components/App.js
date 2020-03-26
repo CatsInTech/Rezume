@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import Header from "./Header/Header";
 import Main from "./Main/Main";
 
-class App extends Component {
-  state = {
+const App = () => {
+  const [data, setData] = useState({
     CurrentPage: "About",
     Resume: {
       About: {
@@ -25,29 +25,29 @@ class App extends Component {
         Phone: "+44 7894561230"
       }
     }
+  });
+  const ChangePage = CurrentPage => {
+    setData({ CurrentPage });
   };
-  ChangePage = CurrentPage => {
-    this.setState({ CurrentPage });
+  const SetSection = (Section, Content) => {
+    setData({ Resume: { ...data.Resume, [Section]: Content } });
   };
-  SetSection = (Section, Content) => {
-    this.setState({ Resume: { ...this.state.Resume, [Section]: Content } });
-  };
-  render() {
-    return (
-      <div className="rezume">
-        <Header
-          ChangePage={this.ChangePage}
-          Resume={this.state.Resume}
-          CurrentPage={this.state.CurrentPage}
-        />
-        <Main
-          CurrentPage={this.state.CurrentPage}
-          Resume={this.state.Resume}
-          SetSection={this.SetSection}
-        />
-      </div>
-    );
-  }
-}
+
+  return (
+    <div className="rezume">
+      {console.log(data)}
+      <Header
+        ChangePage={ChangePage}
+        Resume={data.Resume}
+        CurrentPage={data.CurrentPage}
+      />
+      <Main
+        CurrentPage={data.CurrentPage}
+        Resume={data.Resume}
+        SetSection={SetSection}
+      />
+    </div>
+  );
+};
 
 export default App;
