@@ -2,8 +2,10 @@ import React from "react";
 
 const Rezume = ({ Resume }) => {
   const { Name, Location, CurrentPosition, Summary } = Resume.About;
+
   const { Email, Website, Phone } = Resume.Contact;
   const NameArray = Name.split(" ");
+
   return (
     <div className="rezume-rezume">
       <div className="rezume-rezume-contact">

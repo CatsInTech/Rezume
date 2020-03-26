@@ -3,7 +3,7 @@ import Header from "./Header/Header";
 import Main from "./Main/Main";
 
 const App = () => {
-  const [data, setData] = useState({
+  const [appState, setAppState] = useState({
     CurrentPage: "About",
     Resume: {
       About: {
@@ -27,23 +27,22 @@ const App = () => {
     }
   });
   const ChangePage = CurrentPage => {
-    setData({ CurrentPage });
+    setAppState({ CurrentPage });
   };
   const SetSection = (Section, Content) => {
-    setData({ Resume: { ...data.Resume, [Section]: Content } });
+    setAppState({ Resume: { ...appState.Resume, [Section]: Content } });
   };
 
   return (
     <div className="rezume">
-      {console.log(data)}
       <Header
         ChangePage={ChangePage}
-        Resume={data.Resume}
-        CurrentPage={data.CurrentPage}
+        Resume={appState.Resume}
+        CurrentPage={appState.CurrentPage}
       />
       <Main
-        CurrentPage={data.CurrentPage}
-        Resume={data.Resume}
+        CurrentPage={appState.CurrentPage}
+        Resume={appState.Resume}
         SetSection={SetSection}
       />
     </div>
