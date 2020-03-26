@@ -1,0 +1,16 @@
+name: Greetings
+
+on: [pull_request, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: 'Thank you for raising an issue in Rezume.This Repository is maintained by [Praveen Kumar](https://github.com/praveenscience).He'll get back to you soon.
+        pr-message: 'Thank you for submitting a Pull Request'
+
+
+
