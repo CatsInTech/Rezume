@@ -1,0 +1,15 @@
+name: Greetings
+
+on: [pull_request, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: 'Hello @${{ github.actor }}, thank you for raising an issue. Please ensure that it is detailed and clear along with an acceptance criteria.'
+        pr-message: 'Hello @${{ github.actor }}, thank you for submitting a Pull Request. Make sure you have followed all the contribution guidelines.'
+
+
