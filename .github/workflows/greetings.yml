@@ -9,5 +9,5 @@ jobs:
     - uses: actions/first-interaction@v1
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        issue-message: 'Hello @${{ github.actor }} ,Thank you for raising an issue. Please be detailed and clear along with an acceptance criteria.'
-        pr-message: 'Hello @${{ github.actor }} ,Thank you for submitting a Pull Request. Make sure you have followed all the contribution guidelines.'
+        issue-message: 'Hello @${{ github.actor }}, thank you for raising an issue. Please be detailed and clear along with an acceptance criteria.'
+        pr-message: 'Hello @${{ github.actor }}, thank you for submitting a Pull Request. Make sure you have followed all the contribution guidelines.'
