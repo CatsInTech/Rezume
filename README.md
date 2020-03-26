@@ -60,7 +60,7 @@ git push -u origin <your_branch_name>
 
 **8.** Create a PR!
 
-**9.** **Congratulations!** Sit and relax, you've made your contribution to the Rezume project.
+**9.** **Congratulations!** Sit and relax, you've made your contribution to the Rezume - a free Resume Generator.
 
 
 
