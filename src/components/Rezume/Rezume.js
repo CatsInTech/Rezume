@@ -1,4 +1,5 @@
 import React from "react";
+
 const Rezume = ({ Resume }) => {
   const { Name, Location, CurrentPosition, Summary } = Resume.About;
   const { Email, Website, Phone } = Resume.Contact;
