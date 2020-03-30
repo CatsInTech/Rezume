@@ -18,12 +18,9 @@ Rezume is a free online portal for generating resumes without worrying about the
 ## Installation Instructions
 
 
-
 ## Contribution Guidelines
 
-[![GitHub issues](https://img.shields.io/github/issues/CatsInTech/Rezume?logo=github)](https://github.com/codeuino/Rezume/issues) ![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/CatsInTech/Rezume?logo=git&logoColor=white) ![GitHub contributors](https://img.shields.io/github/contributors/CatsInTech/Rezume?logo=github)  [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat&logo=git&logoColor=white)](https://github.com/CatsInTech) 
-
- [![GitHub last commit](https://img.shields.io/github/last-commit/CatsInTech/Rezume?logo=github)](https://github.com/CatsInTech) [![CatsInTech](https://img.shields.io/badge/Author-@praveenscience-gray.svg?colorA=gray&colorB=dodgerblue&logo=github)](https://github.com/CatsInTech/) 
+[![GitHub issues](https://img.shields.io/github/issues/CatsInTech/Rezume?logo=github)](https://github.com/codeuino/Rezume/issues) ![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/CatsInTech/Rezume?logo=git&logoColor=white) ![GitHub contributors](https://img.shields.io/github/contributors/CatsInTech/Rezume?logo=github)  [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat&logo=git&logoColor=white)](https://github.com/CatsInTech)  [![GitHub last commit](https://img.shields.io/github/last-commit/CatsInTech/Rezume?logo=github)](https://github.com/CatsInTech) [![CatsInTech](https://img.shields.io/badge/Author-@praveenscience-gray.svg?colorA=gray&colorB=dodgerblue&logo=github)](https://github.com/CatsInTech/) 
 
 - Please read our [Code of Conduct](https://github.com/CatsInTech/Rezume/blob/master/CONTRIBUTING.md) and [Gitflow](https://github.com/CatsInTech/Rezume/blob/master/CONTRIBUTING.md) for contributing towards the project.
 - Write clear meaningful git commit messages (Do read [this](http://chris.beams.io/posts/git-commit/)).
@@ -33,8 +30,7 @@ Rezume is a free online portal for generating resumes without worrying about the
 - Please follow the [PR Template](https://github.com/CatsInTech/Rezume/blob/master/CONTRIBUTING.md) to create the PR.
 - Always create PR to `develop` branch.
 
-
-> **Note:** Are you an **absolute beginner?** Please [check the issues](https://github.com/CatsInTech/Rezume/issues) labeled with `first-timers-only`. These issues might _let your Open Source journey begin_ - **Welcome onboard!**
+> **Note:** Are you an **absolute beginner?** Please [check the issues](https://github.com/CatsInTech/Rezume/issues) labeled with `beginners`. These issues might _let your Open Source journey begin_ - **Welcome onboard!**
 
 ## Learning Resources
 
@@ -60,7 +56,6 @@ This project is part of the [GirlScript Summer of Code 2020](https://www.gssoc.t
 *All communication will happen on the Slack channel for this particular projects. Mentors can also be reached through GitHub. Avoid DMs and unnecessary mentions on slack and GitHub both. *Checkout [this](https://github.com/CatsInTech/Rezume/issues) issue for more.**
 
 **3. What is the deadline for any task submission?**
-
 *Mentors can assign issues to participants and also mention a deadline before which the issue is to be resolved. They can reassign issues in case of any delay, so be active and complete your tasks within the negotiated duration.*
 
 ## Mentors
@@ -79,8 +74,6 @@ This project is part of the [GirlScript Summer of Code 2020](https://www.gssoc.t
 
 [![Relative date](https://img.shields.io/date/1577392258?color=important&label=started&logo=github)](https://github.com/praveenscience/) [![Maintenance](https://img.shields.io/maintenance/yes/2020?color=green&logo=github)](https://github.com/praveenscience/)
 
-
-
 | <a href="https://praveen.science/"><img src="https://i.imgur.com/pQkeC0B.png" width=150px height=120px /></a> |
 | :----------------------------------------------------------: |
 | **[Praveen Kumar Purushothaman](https://praveen.science/)**  |
@@ -89,10 +82,5 @@ This project is part of the [GirlScript Summer of Code 2020](https://www.gssoc.t
 ***Feel free to contact me at [catsintech@praveen.science](mailto: catsintech@praveen.science?Subject=Cats in Tech Project)***
 
 [![GitHub followers](https://img.shields.io/github/followers/praveenscience.svg?label=Follow%20@praveenscience&style=social)](https://github.com/praveenscience/) [![Twitter Follow](https://img.shields.io/twitter/follow/praveenscience?style=social)](https://twitter.com/praveenscience) 
-
 ---
-
 [![built with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/AnjaliSharma1234/)
-
- 
-
