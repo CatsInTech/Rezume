@@ -128,8 +128,7 @@ This project is part of the [GirlScript Summer of Code 2020](https://www.gssoc.t
 | **[Praveen Kumar Purushothaman](https://praveen.science/)**  |
 
 >**Need help?**
-Feel free to contact me at [catsintech@praveen.science](https://praveen.science/).
-
+Feel free to contact me at [catsintech@praveen.science](mailto:catsintech@praveen.science).
 
 [![GitHub followers](https://img.shields.io/github/followers/praveenscience.svg?label=Follow%20@praveenscience&style=social)](https://github.com/praveenscience/) [![Twitter Follow](https://img.shields.io/twitter/follow/praveenscience?style=social)](https://twitter.com/praveenscience) 
 
