@@ -81,7 +81,7 @@ As this is a React JS application, you need the following to support your develo
 - Please follow the [PR Template](https://github.com/CatsInTech/Rezume/blob/master/CONTRIBUTING.md) to create the PR.
 - Always create PR to `develop` branch.
 
-> **Note:** Are you an **absolute beginner?** Please [check the issues](https://github.com/CatsInTech/Rezume/issues) labeled with `beginners`. These issues might _let your Open Source journey begin_ - **Welcome onboard!**
+> **Note:** Are you an **absolute beginner?** Please [check the issues](https://github.com/CatsInTech/Rezume/issues) labelled with `beginners`. These issues might _let your Open Source journey begin_ - **Welcome onboard!**
 
 ## Learning Resources
 
@@ -110,8 +110,7 @@ This project is part of the [GirlScript Summer of Code 2020](https://www.gssoc.t
 *Mentors can assign issues to participants and also mention a deadline before which the issue is to be resolved. They can reassign issues in case of any delay, so be active and complete your tasks within the negotiated duration.*
 
 ## Mentors
-
- [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/CatsInTech/Rezume) ![GitHub pull requests](https://img.shields.io/github/issues-pr-closed-raw/CatsInTech/Rezume?logo=git&logoColor=white)
+[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/CatsInTech/Rezume) ![GitHub pull requests](https://img.shields.io/github/issues-pr-closed-raw/CatsInTech/Rezume?logo=git&logoColor=white)
 
 | GitHub Usernames                                     | Domain                     |
 | ---------------------------------------------------- | -------------------------- |
@@ -129,8 +128,8 @@ This project is part of the [GirlScript Summer of Code 2020](https://www.gssoc.t
 | :----------------------------------------------------------: |
 | **[Praveen Kumar Purushothaman](https://praveen.science/)**  |
 
-> ***Need help?***
-***Feel free to contact me at [catsintech@praveen.science](mailto: catsintech@praveen.science?Subject=Cats in Tech Project)***
+>**Need help?**
+Feel free to contact me at [catsintech@praveen.science](mailto: catsintech@praveen.science?Subject=Cats in Tech Project).
 
 [![GitHub followers](https://img.shields.io/github/followers/praveenscience.svg?label=Follow%20@praveenscience&style=social)](https://github.com/praveenscience/) [![Twitter Follow](https://img.shields.io/twitter/follow/praveenscience?style=social)](https://twitter.com/praveenscience) 
 
