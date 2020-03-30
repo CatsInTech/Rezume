@@ -86,7 +86,8 @@ As this is a React JS application, you need the following to support your develo
 - [Github Workflow](https://www.youtube.com/watch?v=UOpz8c8B0MQ)
 - [Introduction and Architechture Basics (1/3)](https://www.youtube.com/watch?v=SzN9Qbv1-Tc&feature=youtu.be)
 - [Introduction and Architechture Basics (2/3)](https://www.youtube.com/watch?v=2xqNPA28OeY&feature=youtu.be)
-- [Introduction and Architechture Basics (3/3)](https://www.youtube.com/watch?v=QSUhiZdtI-4&feature=youtu.be) 
+- [Introduction and Architechture Basics (3/3)](https://www.youtube.com/watch?v=QSUhiZdtI-4&feature=youtu.be)
+- [Rezume Data Structures and Website Marketing](https://youtu.be/kMlZ4rSwJGU)
 
 ## Motivation
 
@@ -127,7 +128,8 @@ This project is part of the [GirlScript Summer of Code 2020](https://www.gssoc.t
 | **[Praveen Kumar Purushothaman](https://praveen.science/)**  |
 
 >**Need help?**
-Feel free to contact me at [catsintech@praveen.science](mailto: catsintech@praveen.science?Subject=Cats in Tech Project).
+Feel free to contact me at [catsintech@praveen.science](https://praveen.science/).
+
 
 [![GitHub followers](https://img.shields.io/github/followers/praveenscience.svg?label=Follow%20@praveenscience&style=social)](https://github.com/praveenscience/) [![Twitter Follow](https://img.shields.io/twitter/follow/praveenscience?style=social)](https://twitter.com/praveenscience) 
 
