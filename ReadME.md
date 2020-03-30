@@ -1,7 +1,6 @@
 # Welcome to Rezume - a free Resume Generator
 
-[![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-tomato.svg?style=flat&logo=git)](https://github.com/CatsInTech/Rezume/issues) [![GitHub stars](https://img.shields.io/github/stars/CatsInTech/Rezume.svg?logo=github)](https://github.com/CatsInTech/Rezume/stargazers) [![GitHub forks](https://img.shields.io/github/forks/CatsInTech/Rezume.svg?logo=github&color=teal)](https://github.com/CatsInTech/Rezume/network) [![GitHub top language](https://img.shields.io/github/languages/top/CatsInTech/Rezume?color=yellow&logo=javascript)](https://github.com/vinitshahdeo/Water-Monitoring-System) 
-
+[![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-tomato.svg?style=flat&logo=git)](https://github.com/CatsInTech/Rezume/issues) [![GitHub stars](https://img.shields.io/github/stars/CatsInTech/Rezume.svg?logo=github)](https://github.com/CatsInTech/Rezume/stargazers) [![GitHub forks](https://img.shields.io/github/forks/CatsInTech/Rezume.svg?logo=github&color=teal)](https://github.com/CatsInTech/Rezume/network) [![GitHub top language](https://img.shields.io/github/languages/top/CatsInTech/Rezume?color=yellow&logo=javascript)](https://github.com/CatsInTech/Rezume) 
 
 Rezume is a free online portal for generating resumes without worrying about the styling and formatting. In the web portal, you only need to input the basic information which you want to have on your resume and it will automatically generate a decent resume for you.
 
@@ -20,7 +19,6 @@ Rezume is a free online portal for generating resumes without worrying about the
 ### System Requirements
 
 As this is a React JS application, you need the following to support your development environment.
-
 * [Git](https://git-scm.com/downloads)
 * [Node.js](https://nodejs.org/en/) (Please go with any latest LTS versions)
 * [Linux Based Terminal](https://gitforwindows.org/), if you're using Windows and installed with Git.
