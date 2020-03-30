@@ -22,8 +22,8 @@ const FormElement = ({ Label, Value, Type, onChange }) => {
                 placeholder={Label}
                 onChange={onChange}
                 rows="10"
+                value={Value}
               >
-                {Value}
               </textarea>
             );
           default:
