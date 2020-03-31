@@ -1,0 +1,14 @@
+addReviewers: true
+
+addAssignees: false
+
+reviewers: 
+  - praveenscience
+  - vermakhushboo
+  - PrathibhaS
+  - priyadharshinir1894
+  
+skipKeywords:
+  - WIP
+
+numberOfReviewers: 0

@@ -1,0 +1,19 @@
+name: Mark stale issues and pull requests
+on:
+  schedule:
+  - cron: "0 0 * * *"
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/stale@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        stale-issue-message: 'The issue is not attended since 14 days. It's up for grab.'
+        stale-pr-message: 'The PR is not reviewed since 14 days. Kindly attend the PR.'
+        stale-issue-label: 'no-issue-activity'
+        exempt-issue-label: 'awaiting-approval'
+        stale-pr-label: 'no-pr-activity'
+        exempt-pr-label: 'awaiting-approval'
+        days-before-stale: 14
