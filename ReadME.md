@@ -4,6 +4,21 @@
 
 Rezume is a free online portal for generating resumes without worrying about the styling and formatting. In the web portal, you only need to input the basic information which you want to have on your resume and it will automatically generate a decent resume for you.
 
+## Table of Contents
+
+- [Major objective](#major-objective)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+  - [System Requirements](#system-requirements)
+  - [Installation Instructions](#installation-instructions)
+  - [Running the application locally](#running-the-application-locally)
+- [Contribution Guidelines](#contribution-guidelines)
+- [Learning Resources](#learning-resources)
+- [Motivation](#motivation)
+  - [FAQ's for Gssoc'20](#frequently-asked-questionsfaqs-for-gssoc20)
+- [Mentors](#mentors)
+- [Project Admin](#project-admin)
+
 ## Major objective 
 
 - To let beginners venture into the domain of Web Development
@@ -32,7 +47,7 @@ As this is a React JS application, you need the following to support your develo
   6. [ES7 React/Redux/GraphQL/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets) provides you JavaScript and React/Redux snippets in ES7 with Babel plugin features for VS Code.
   7. [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree) `(optional)` quickly searches (using ripgrep) your workspace for comment tags like TODO and FIXME, and displays them in a tree view in the explorer pane. Clicking a TODO within the tree will open the file and put the cursor on the line containing the TODO.
   8. [`vscode-icons`](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons) `(optional)` is more of a cosmetic thing, which brings icons to the Visual Studio Code editor.
-
+  
 ### Installation Instructions
 
 [Create React App](https://github.com/facebookincubator/create-react-app) is a comfortable environment for **learning React**, and is the best way to start building **a new [single-page](https://reactjs.org/docs/glossary.html#single-page-application) application** in React. This project makes use of Create React App. It sets up your development environment so that you can use the latest JavaScript features, provides a nice developer experience, and optimises your app for production. You’ll need to have [Node >= 8.10 and npm >= 5.6](https://nodejs.org/en/) on your machine.
