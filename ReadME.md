@@ -15,7 +15,7 @@ Rezume is a free online portal for generating resumes without worrying about the
 - [Contribution Guidelines](#contribution-guidelines)
 - [Learning Resources](#learning-resources)
 - [Motivation](#motivation)
-  - [FAQ's for Gssoc'20](#frequently-asked-questionsfaqs-for-gssoc20)
+  - [FAQs for GSSoC '20](#frequently-asked-questionsfaqs-for-gssoc20)
 - [Mentors](#mentors)
 - [Project Admin](#project-admin)
 
