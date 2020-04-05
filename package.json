@@ -4,7 +4,9 @@
   "private": true,
   "homepage": "https://app.rezume.best",
   "dependencies": {
+    "acron": "^1.0.5",
     "gh-pages": "^2.1.1",
+    "minimist": "^1.2.5",
     "node-sass": "^4.13.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
