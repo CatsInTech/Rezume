@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://app.rezume.best",
   "dependencies": {
+    "bootstrap": "^4.4.1",
     "gh-pages": "^2.1.1",
     "node-sass": "^4.13.0",
     "react": "^16.12.0",
@@ -32,5 +33,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-git-info": "^1.0.1"
   }
 }
