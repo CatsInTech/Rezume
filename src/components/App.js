@@ -30,12 +30,10 @@ const App = () => {
     setAppState({ ...appState, CurrentPage: CurrentPage });
   };
   const SetSection = (Section, Content) => {
-    console.log(Section);
     setAppState({ Resume: { ...appState.Resume, [Section]: Content } });
-  };
+   };
   return (
     <div className="rezume">
-      {console.log(appState)}
       <Header
         ChangePage={ChangePage}
         Resume={appState.Resume}
