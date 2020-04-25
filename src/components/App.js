@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Header from "./Header/Header";
 import Main from "./Main/Main";
+import Footer from "./Footer/Footer";
 
 const App = () => {
   const [appState, setAppState] = useState({
@@ -43,6 +44,10 @@ const App = () => {
         CurrentPage={appState.CurrentPage}
         Resume={appState.Resume}
         SetSection={SetSection}
+      />
+      <Footer 
+        ContactPage={appState.Resume.Contact}
+        ChangePage={ChangePage}
       />
     </div>
   );
