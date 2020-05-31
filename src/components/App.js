@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Header from "./Header/Header";
 import Main from "./Main/Main";
+import Footer from "./Footer/Footer";
 
 const App = () => {
   const [appState, setAppState] = useState({
@@ -44,6 +45,7 @@ const App = () => {
         Resume={appState.Resume}
         SetSection={SetSection}
       />
+      <Footer/>
     </div>
   );
 };
