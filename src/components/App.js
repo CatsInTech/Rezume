@@ -12,7 +12,7 @@ const App = () => {
         Location: "London, United Kingdom",
         CurrentPosition: "Product Owner at Cloudroit",
         Summary:
-          "Strong proficiency in JavaScript, including DOM manipulation and the JavaScript object model and thorough understanding of React JS and its core principles. Experience with popular React.js workflows (such as Flux or Redux). Familiarity with newer specifications of EcmaScript."
+          "Strong proficiency in JavaScript, including DOM manipulation and the JavaScript object model and thorough understanding of React JS and its core principles. Experience with popular React.js workflows (such as Flux or Redux). Familiarity with newer specifications of EcmaScript.",
       },
       Experience: [],
       Education: [],
@@ -23,16 +23,16 @@ const App = () => {
       Contact: {
         Email: "priya@cloudroit.co.uk",
         Website: "priya.ws",
-        Phone: "+44 7894561230"
-      }
-    }
+        Phone: "+44 7894561230",
+      },
+    },
   });
-  const ChangePage = CurrentPage => {
-    setAppState({ CurrentPage });
+  const ChangePage = (CurrentPage) => {
+    setAppState({ ...appState, CurrentPage: CurrentPage });
   };
   const SetSection = (Section, Content) => {
     setAppState({ Resume: { ...appState.Resume, [Section]: Content } });
-  };
+   };
   return (
     <div className="rezume">
       <Header
