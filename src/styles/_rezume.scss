@@ -22,6 +22,12 @@
       font-weight: 600;
     }
   }
+  strong.position {
+    font-weight: 550;
+    color: #000;
+    margin-right: 10px;
+    font-size: 150%;
+  }
   p {
     line-height: 1.75;
     &.location {
@@ -31,11 +37,6 @@
     &.summary {
       color: #666;
       text-align: justify;
-      strong.position {
-        font-weight: 600;
-        color: #000;
-        margin-right: 10px;
-      }
     }
   }
 }
