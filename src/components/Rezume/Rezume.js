@@ -32,9 +32,9 @@ const Rezume = ({ Resume }) => {
       <h2>
         <span>{NameArray.shift()}</span> {NameArray.join(" ")}
       </h2>
-      <strong className="position">{CurrentPosition}</strong>
       <p className="location">{Location}</p>
       <p className="summary">
+        <strong className="position">{CurrentPosition}</strong>
         {Summary}
       </p>
     </div>
