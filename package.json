@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://app.rezume.best",
   "dependencies": {
+    "dom-to-image": "^2.6.0",
     "gh-pages": "^2.1.1",
     "html2canvas": "^1.4.1",
     "jspdf": "^2.5.1",
