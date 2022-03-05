@@ -1,2 +1,8 @@
 img{height: 350px;
-width: 350px;}
+width: 350px;
+box-shadow: 2px 2px 8px 10px #b1b0b0c7;
+transition: transform 0.5s;
+border-radius: 10px;}
+img:hover{transform: scale(1.15);
+}
+
