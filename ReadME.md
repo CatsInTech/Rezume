@@ -110,7 +110,7 @@ This project is part of the [GirlScript Summer of Code 2022](https://gssoc.girls
 
 ### Frequently Asked Questions(FAQs) for [GSSoC '22](https://gssoc.girlscript.tech/)
 
-> This project is accepting contributions under [GirlScript Summer of Code 2020](https://gssoc.girlscript.tech/) - three months long Open Source program conducted by [GirlScript Foundation](https://gssoc.girlscript.tech/).
+> This project is accepting contributions under [GirlScript Summer of Code 2022](https://gssoc.girlscript.tech/) - three months long Open Source program conducted by [GirlScript Foundation](https://gssoc.girlscript.tech/).
 
 [![GSSoC](https://raw.githubusercontent.com/GirlScriptSummerOfCode/MentorshipProgram/master/GSsoc%20Type%20Logo%20Black.png)](https://gssoc.girlscript.tech/)
 
@@ -136,7 +136,7 @@ This project is part of the [GirlScript Summer of Code 2022](https://gssoc.girls
 
 ## Project Admin
 
-[![Relative date](https://img.shields.io/date/1577392258?color=important&label=started&logo=github)](https://github.com/praveenscience/) [![Maintenance](https://img.shields.io/maintenance/yes/2020?color=green&logo=github)](https://github.com/praveenscience/)
+[![Relative date](https://img.shields.io/date/1577392258?color=important&label=started&logo=github)](https://github.com/praveenscience/) [![Maintenance](https://img.shields.io/maintenance/yes/2022?color=green&logo=github)](https://github.com/praveenscience/)
 
 | <a href="https://praveen.science/"><img src="https://i.imgur.com/pQkeC0B.png" width=150px height=120px /></a> |
 | :----------------------------------------------------------: |
