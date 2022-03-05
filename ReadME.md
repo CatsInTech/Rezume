@@ -106,13 +106,13 @@ As this is a React JS application, you need the following to support your develo
 
 ## Motivation
 
-This project is part of the [GirlScript Summer of Code 2020](https://www.gssoc.tech/) Open Source Program.
+This project is part of the [GirlScript Summer of Code 2022](https://gssoc.girlscript.tech/) Open Source Program.
 
-### Frequently Asked Questions(FAQs) for [GSSoC'20](https://www.gssoc.tech/)
+### Frequently Asked Questions(FAQs) for [GSSoC '22](https://gssoc.girlscript.tech/)
 
-> This project is accepting contributions under [GirlScript Summer of Code 2020](https://www.gssoc.tech/) - three months long Open Source program conducted by [GirlScript Foundation](https://www.gssoc.tech/).
+> This project is accepting contributions under [GirlScript Summer of Code 2022](https://gssoc.girlscript.tech/) - three months long Open Source program conducted by [GirlScript Foundation](https://gssoc.girlscript.tech/).
 
-[![GSSoC](https://raw.githubusercontent.com/GirlScriptSummerOfCode/MentorshipProgram/master/GSsoc%20Type%20Logo%20Black.png)](https://www.gssoc.tech/)
+[![GSSoC](https://raw.githubusercontent.com/GirlScriptSummerOfCode/MentorshipProgram/master/GSsoc%20Type%20Logo%20Black.png)](https://gssoc.girlscript.tech/)
 
 **1. How to start as a beginner so as to contribute to the project?**
 *There are many beginner level issues to begin with, which include documentation, development and design. Also, feel free to make issues for features as well as for reporting bugs. Participants can claim an issue by commenting that they are interested in it. We are also open to new ideas and suggestions.*
@@ -136,7 +136,7 @@ This project is part of the [GirlScript Summer of Code 2020](https://www.gssoc.t
 
 ## Project Admin
 
-[![Relative date](https://img.shields.io/date/1577392258?color=important&label=started&logo=github)](https://github.com/praveenscience/) [![Maintenance](https://img.shields.io/maintenance/yes/2020?color=green&logo=github)](https://github.com/praveenscience/)
+[![Relative date](https://img.shields.io/date/1577392258?color=important&label=started&logo=github)](https://github.com/praveenscience/) [![Maintenance](https://img.shields.io/maintenance/yes/2022?color=green&logo=github)](https://github.com/praveenscience/)
 
 | <a href="https://praveen.science/"><img src="https://i.imgur.com/pQkeC0B.png" width=150px height=120px /></a> |
 | :----------------------------------------------------------: |
