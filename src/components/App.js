@@ -24,7 +24,7 @@ const App = () => {
         Email: "priya@cloudroit.co.uk",
         Website: "priya.ws",
         Phone: "+44 7894561230",
-      },
+      }
     },
   });
   const ChangePage = (CurrentPage) => {
