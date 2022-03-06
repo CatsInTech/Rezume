@@ -1,5 +1,5 @@
 import React from "react";
-import GitInfo from 'react-git-info/macro';
+import GitInfo from "react-git-info/macro";
 const gitInfo = GitInfo();
 
 const Footer = () => {
@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="page-footer font-small pt-4">
       <div className="footer-copyright text-center py-3">
         Copyright © 2020 Rezume
-        <br/>
+        <br />
         Version: {gitInfo.commit.hash}
       </div>
     </footer>
