@@ -32,8 +32,8 @@ const App = () => {
   };
   const SetSection = (Section, Content) => {
     setAppState({
-      Resume: { ...appState.Resume, [Section]: Content },
-      CurrentPage: Section,
+      ...appState,
+      Resume: { ...appState.Resume, [Section]: Content }
     });
   };
   return (
