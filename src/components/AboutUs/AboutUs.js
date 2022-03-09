@@ -53,7 +53,7 @@ const ProfileCard = ({ profileImage, name, githubProfile, twitterProfile }) => {
         <a
           href={twitterProfile}
           class="fa fa-lg fa-twitter"
-          target={twitterProfile != "" ? "_blank" : "_self"}
+          target={twitterProfile !== "" ? "_blank" : "_self"}
           rel="noopener noreferrer"
         ></a>
       </div>
