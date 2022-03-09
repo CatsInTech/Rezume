@@ -2,6 +2,13 @@ import React, { useState } from "react";
 import Header from "./Header/Header";
 import Main from "./Main/Main";
 import Footer from "./Footer/Footer";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+} from "react-router-dom";
+import AboutUs from "./AboutUs/AboutUs";
+import Home from "./Home/Home";
 
 const App = () => {
   const [appState, setAppState] = useState({
@@ -32,21 +39,32 @@ const App = () => {
   };
   const SetSection = (Section, Content) => {
     setAppState({ Resume: { ...appState.Resume, [Section]: Content } });
-   };
+  };
   return (
-    <div className="rezume">
-      <Header
-        ChangePage={ChangePage}
-        Resume={appState.Resume}
-        CurrentPage={appState.CurrentPage}
-      />
-      <Main
-        CurrentPage={appState.CurrentPage}
-        Resume={appState.Resume}
-        SetSection={SetSection}
-      />
-      <Footer/>
-    </div>
+    <Router>
+      <div className="rezume">
+        <Header
+          ChangePage={ChangePage}
+          Resume={appState.Resume}
+          CurrentPage={appState.CurrentPage}
+        />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Main
+                CurrentPage={appState.CurrentPage}
+                Resume={appState.Resume}
+                SetSection={SetSection}
+              />
+            }
+          />
+          <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/home" element={<Home />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 };
 
