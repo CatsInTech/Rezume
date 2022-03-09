@@ -31,8 +31,11 @@ const App = () => {
     setAppState({ ...appState, CurrentPage: CurrentPage });
   };
   const SetSection = (Section, Content) => {
-    setAppState({ Resume: { ...appState.Resume, [Section]: Content } });
-   };
+    setAppState({
+      Resume: { ...appState.Resume, [Section]: Content },
+      CurrentPage: Section,
+    });
+  };
   return (
     <div className="rezume">
       <Header
@@ -45,7 +48,7 @@ const App = () => {
         Resume={appState.Resume}
         SetSection={SetSection}
       />
-      <Footer/>
+      <Footer />
     </div>
   );
 };
