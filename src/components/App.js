@@ -17,7 +17,13 @@ const App = () => {
       Experience: [],
       Education: [],
       Awards: [],
-      Projects: [],
+      Projects: {
+				ProjTitle: "Face and Emotion Detection Web App",
+				TechStack: "JavaScript, Tensorflow.js",
+				Summary: "This project is a face and emotion detection web app. The project is built using HTML, CSS, and vanilla JavaScript. In this project I have used tensorflow.js API to help detect faces and emotions using the webcam and then dynamically paint the output data (detected face box, emotions, and other details) from the API using HTML canvas.",
+				ProjLocation: "London, United Kingdom",
+				ProjURL: "https://github.com/CatsInTech/Rezume"
+			},
       Skills: [],
       Hobbies: [],
       Contact: {
