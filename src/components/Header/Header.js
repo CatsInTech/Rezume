@@ -15,7 +15,7 @@ const Header = ({ ChangePage, CurrentPage, Resume }) => {
           />
         ))}
       </ul>
-      <button className="btn btn-primary btn-sm col-1">About Us</button>
+      <button className="btn btn-sm col-1">About Us</button>
     </nav>
   );
 };
