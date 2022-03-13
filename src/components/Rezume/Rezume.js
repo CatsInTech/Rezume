@@ -38,6 +38,30 @@ const Rezume = ({
       List: appState.Resume.Experiences.List.splice(Index, 1),
     });
   };
+  //This function will handle onclick event for ExperienceBlock. This function updates the "Current" of the Experiences to the experience that is just clicked so that the experience form displays the details of the experience that has been clicked.
+  const handleOnClickAwardsBlock = (Index) => {
+    // The below code is a better way of implementation... but for some reason ChangePage() is not working as expected
+    // console.log(appState.CurrentPage);
+    // ChangePage("Experiences");
+    // console.log(appState.CurrentPage);
+    // SetSection("Experiences", { ...appState.Resume.Experiences, Current: Index });
+    setAppState({
+      ...appState,
+      CurrentPage: "Awards",
+      Resume: {
+        ...appState.Resume,
+        Awards: { ...appState.Resume.Awards, Current: Index },
+      },
+    });
+  };
+
+  // This function is used to delete the experience from the experience List
+  const handleOnClickAwardsDelete = (Index) => {
+    SetSection("Awards", {
+      ...appState.Resume.Awards,
+      List: appState.Resume.Awards.List.splice(Index, 1),
+    });
+  };
 
   //This function will handle onclick event for ProjectBlock. This function updates the "Current" of the Projects to the project that is just clicked so that the projects form displays the details of the project that has been clicked.
   const handleOnClickProjectBlock = (Index) => {
@@ -118,7 +142,7 @@ const Rezume = ({
         {/* Github url is optional if the user does not enter any github url then we are not going to display the github link button  */}
         {GitHubURL !== "" ? (
           <a
-            className="prj-link prj-link-github"
+            className="exp-link exp-link-github"
             href={GitHubURL}
             target="_blank"
             rel="noopener noreferrer"
@@ -131,13 +155,41 @@ const Rezume = ({
         {/* Deployed / project url is optional if the user does not enter any url then we are not going to display the project url button  */}
         {DeployedURL !== "" ? (
           <a
-            className="prj-link prj-link-deplyedurl"
+            className="exp-link exp-link-deplyedurl"
             href={DeployedURL}
             target="_blank"
             rel="noopener noreferrer"
           >
             Project Url
           </a>
+        ) : (
+          <></>
+        )}
+      </div>
+    );
+  };
+
+  const AwardsBlock = ({ Index, AwardSummary, CertificateLink }) => {
+    return (
+      <div
+        className="award"
+        onClick={() => {
+          handleOnClickAwardsBlock(Index);
+        }}
+      >
+        <p
+          className="award-delete"
+          onClick={() => {
+            handleOnClickAwardsDelete(Index);
+          }}
+        >Delete</p>
+        <p className="award-desc">{AwardSummary}</p>
+        {CertificateLink !== "" ? (
+          <strong>
+            <a href={CertificateLink} target="_blank" rel="noopener noreferrer">
+              Certificate Link
+            </a>
+          </strong>
         ) : (
           <></>
         )}
@@ -315,22 +367,11 @@ const Rezume = ({
               const { AwardSummary, CertificateLink } = award;
               return (
                 <li key={key}>
-                  <div>
-                    <p>{AwardSummary}</p>
-                    {CertificateLink !== "" ? (
-                      <strong>
-                        <a
-                          href={CertificateLink}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Certificate Link
-                        </a>
-                      </strong>
-                    ) : (
-                      <></>
-                    )}
-                  </div>
+                  <AwardsBlock
+                    AwardSummary={AwardSummary}
+                    CertificateLink={CertificateLink}
+                    Index={key}
+                  />
                 </li>
               );
             })}
