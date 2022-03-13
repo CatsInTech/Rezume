@@ -15,8 +15,8 @@ const App = () => {
           "Strong proficiency in JavaScript, including DOM manipulation and the JavaScript object model and thorough understanding of React JS and its core principles. Experience with popular React.js workflows (such as Flux or Redux). Familiarity with newer specifications of EcmaScript.",
       },
       Skills: {
-        TechnicalSkills: "JavaScript, Ruby, C++",
-        SoftSkills: "Confident, Good Listener, Creative",
+        TechnicalSkills: "(optional) C++, c, JAVA",
+        SoftSkills: "(optional) Creative, Hardworking",
       },
       // Experience, Education, Awards, Projects object have the same item/Object member names --(Current, List) because in the FormELement.js we require this "Current" and "List" to render the form properly
       Experiences: {

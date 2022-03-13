@@ -237,8 +237,26 @@ const Rezume = ({
         <strong className="position">{CurrentPosition}</strong>
         {Summary}
       </p>
+      {/* Skills Section ------------------------------------------------------ */}
+      {/* If there is no skills then we should not display the "Skills" heading in the resume */}
+      {Resume.Skills.TechnicalSkills !== "" ||
+      Resume.Skills.SoftSkills !== "" ? (
+        <>
+          <hr />
+          <h3>
+            <strong>SKILLS</strong>
+          </h3>
+        </>
+      ) : (
+        <></>
+      )}
+      <div className="skills">
+        <p className="skills-tech">{Resume.Skills.TechnicalSkills}</p>
+        <p className="skills-tech">{Resume.Skills.SoftSkills}</p>
+      </div>
+
       {/* Experience Section ------------------------------------------------------ */}
-      {/* If there is no projects the we should not display the "Experience" heading in the resume */}
+      {/* If there is no experience then we should not display the "Experience" heading in the resume */}
       {Resume.Experiences.List.length > 0 ? (
         <>
           <hr />
@@ -285,7 +303,7 @@ const Rezume = ({
       })}
 
       {/* Projects Section ------------------------------------------------------ */}
-      {/* If there is no projects the we should not display the "Projects" heading in the resume */}
+      {/* If there is no projects then we should not display the "Projects" heading in the resume */}
       {Resume.Projects.List.length > 0 ? (
         <>
           <hr />

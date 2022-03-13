@@ -5,7 +5,7 @@
 	transition: all 0.5s ease-in-out;
 	padding: 0 10px;
 	&:hover{
-		box-shadow: 0 0 15px 2px #999;
+		box-shadow: 0 0 15px 2px rgb(221, 221, 221);
 		.prj-delete{
 			opacity: 1;
 		}
