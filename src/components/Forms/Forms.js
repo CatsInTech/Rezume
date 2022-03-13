@@ -24,6 +24,10 @@ const dummyExperience = {
   GitHubURL: "(Optional) Ex:https://github.com/yourAccount/repo",
   DeployedURL: "(Optional) Ex:https://project.com",
 };
+const dummyAward = {
+	AwardSummary:"I have won so and so prize in so and so competition",
+	CertificateLink:"(optional) Ex:https://certificateLink"
+}
 
 // ---------------------------------------------------------------------------------------------------
 
@@ -44,7 +48,9 @@ const Forms = ({ CurrentPage, SetSection, Resume }) => {
       addItemToProject();
     } else if (CurrentPage === "Experiences") {
       addItemToExperiences();
-    }
+    }else if(CurrentPage === "Awards"){
+      addItemToAwards();
+		}
   };
   const addItemToProject = () => {
     var newList = [...Resume["Projects"].List, dummyProject];
@@ -58,6 +64,14 @@ const Forms = ({ CurrentPage, SetSection, Resume }) => {
     var newList = [...Resume["Experiences"].List, dummyExperience];
     const newItemIndex = newList.length - 1;
     SetSection("Experiences", {
+      Current: newItemIndex,
+      List: newList,
+    });
+  };
+  const addItemToAwards = () => {
+    var newList = [...Resume["Awards"].List, dummyAward];
+    const newItemIndex = newList.length - 1;
+    SetSection("Awards", {
       Current: newItemIndex,
       List: newList,
     });

@@ -25,16 +25,7 @@ const App = () => {
       },
       Awards: {
         Current: 0,
-        List: [
-          {
-            Title: "Face and Emotion Detection Web App",
-            TechStack: "JavaScript, Tensorflow.js",
-            ProjectSummary:
-              "This project is a face and emotion detection web app. The project is built using HTML, CSS, and vanilla JavaScript. In this project I have used tensorflow.js API to help detect faces and emotions using the webcam and then dynamically paint the output data (detected face box, emotions, and other details) from the API using HTML canvas.",
-            GitHubURL: "(Optional) Ex: https://github.com/CatsInTech/Rezume",
-            DeployedURL: "(Optional) Ex:https://github.com/CatsInTech/Rezume",
-          },
-        ],
+        List: [],
       },
       Projects: {
         Current: 0,
@@ -54,7 +45,7 @@ const App = () => {
         ],
       },
       Hobbies: {
-				// The structure of Hobbies is so and not simply a string because in the Form.js it looks for an object and then it renders the elements inside the object
+        // The structure of Hobbies is so and not simply a string because in the Form.js it looks for an object and then it renders the elements inside the object
         Hobbies: "(optional) Playing basketball, Music",
       },
       Contact: {

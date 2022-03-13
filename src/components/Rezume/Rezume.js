@@ -302,6 +302,44 @@ const Rezume = ({
         );
       })}
 
+      {/* Awards Section ------------------------------------------------------ */}
+      {/* If there is no award then we should not display the "Awards" heading in the resume */}
+      {Resume.Awards.List.length > 0 ? (
+        <>
+          <hr />
+          <h3>
+            <strong>AWARDS</strong>
+          </h3>
+          <ul>
+            {Resume.Awards.List.map((award, key) => {
+              const { AwardSummary, CertificateLink } = award;
+              return (
+                <li key={key}>
+                  <div>
+                    <p>{AwardSummary}</p>
+                    {CertificateLink !== "" ? (
+                      <strong>
+                        <a
+                          href={CertificateLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Certificate Link
+                        </a>
+                      </strong>
+                    ) : (
+                      <></>
+                    )}
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+        </>
+      ) : (
+        <></>
+      )}
+
       {/* Projects Section ------------------------------------------------------ */}
       {/* If there is no projects then we should not display the "Projects" heading in the resume */}
       {Resume.Projects.List.length > 0 ? (
