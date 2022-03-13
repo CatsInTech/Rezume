@@ -7,9 +7,24 @@ const dummyProject = {
   TechStack: "Ex : JavaScript, Tensorflow.js",
   ProjectSummary:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
-  GitHubURL: "https://github.com/yourAccount/repo",
-  DeployedURL: "https://project.com",
+  GitHubURL: "(Optional) Ex:https://github.com/yourAccount/repo",
+  DeployedURL: "(Optional) Ex:https://project.com",
 };
+const dummyExperience = {
+  Title: "New Experience Title",
+  Type: "Ex: Internship or Full Time",
+  Employer: "Ex: Organisation Name",
+  EmployerURL: "Ex: https://www.companyURL.com",
+  StartDate: "1 March, 2022",
+  EndDate: "1 April, 2022",
+  Location: "(Optional)Ex: London",
+  TechStack: "Ex : JavaScript, Tensorflow.js",
+  ExperienceSummary:
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
+  GitHubURL: "(Optional) Ex:https://github.com/yourAccount/repo",
+  DeployedURL: "(Optional) Ex:https://project.com",
+};
+
 // ---------------------------------------------------------------------------------------------------
 
 // The input form of the pages that have an array / List of elements is rendered differently than the one whitout a array. This function is used to check wheather the currentPage has a array or not. In App.js we can see that the About, Skills, Hobbies, Contact don't have any array/ List whereas Projects, Experience, Education and Awards have a List
@@ -27,13 +42,22 @@ const Forms = ({ CurrentPage, SetSection, Resume }) => {
   const addItem = (CurrentPage) => {
     if (CurrentPage === "Projects") {
       addItemToProject();
+    } else if (CurrentPage === "Experiences") {
+      addItemToExperiences();
     }
   };
   const addItemToProject = () => {
     var newList = [...Resume["Projects"].List, dummyProject];
     const newItemIndex = newList.length - 1;
-    console.log(newList);
     SetSection("Projects", {
+      Current: newItemIndex,
+      List: newList,
+    });
+  };
+  const addItemToExperiences = () => {
+    var newList = [...Resume["Experiences"].List, dummyExperience];
+    const newItemIndex = newList.length - 1;
+    SetSection("Experiences", {
       Current: newItemIndex,
       List: newList,
     });

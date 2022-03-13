@@ -14,8 +14,16 @@ const App = () => {
         Summary:
           "Strong proficiency in JavaScript, including DOM manipulation and the JavaScript object model and thorough understanding of React JS and its core principles. Experience with popular React.js workflows (such as Flux or Redux). Familiarity with newer specifications of EcmaScript.",
       },
+      Skills: {
+        TechnicalSkills: "JavaScript, Ruby, C++",
+        SoftSkills: "Confident, Good Listener, Creative",
+      },
       // Experience, Education, Awards, Projects object have the same item/Object member names --(Current, List) because in the FormELement.js we require this "Current" and "List" to render the form properly
-      Experience: {
+      Experiences: {
+        Current: 0,
+        List: [],
+      },
+      Awards: {
         Current: 0,
         List: [
           {
@@ -23,10 +31,14 @@ const App = () => {
             TechStack: "JavaScript, Tensorflow.js",
             ProjectSummary:
               "This project is a face and emotion detection web app. The project is built using HTML, CSS, and vanilla JavaScript. In this project I have used tensorflow.js API to help detect faces and emotions using the webcam and then dynamically paint the output data (detected face box, emotions, and other details) from the API using HTML canvas.",
-            GitHubURL: "https://github.com/CatsInTech/Rezume",
-            DeployedURL: "https://github.com/CatsInTech/Rezume",
+            GitHubURL: "(Optional) Ex: https://github.com/CatsInTech/Rezume",
+            DeployedURL: "(Optional) Ex:https://github.com/CatsInTech/Rezume",
           },
         ],
+      },
+      Projects: {
+        Current: 0,
+        List: [],
       },
       Education: {
         Current: 0,
@@ -40,44 +52,6 @@ const App = () => {
             DeployedURL: "https://github.com/CatsInTech/Rezume",
           },
         ],
-      },
-      Awards: {
-        Current: 0,
-        List: [
-          {
-            Title: "Face and Emotion Detection Web App",
-            TechStack: "JavaScript, Tensorflow.js",
-            ProjectSummary:
-              "This project is a face and emotion detection web app. The project is built using HTML, CSS, and vanilla JavaScript. In this project I have used tensorflow.js API to help detect faces and emotions using the webcam and then dynamically paint the output data (detected face box, emotions, and other details) from the API using HTML canvas.",
-            GitHubURL: "https://github.com/CatsInTech/Rezume",
-            DeployedURL: "https://github.com/CatsInTech/Rezume",
-          },
-        ],
-      },
-      Projects: {
-        Current: 0,
-        List: [
-          {
-            Title: "Face and Emotion Detection Web App",
-            TechStack: "JavaScript, Tensorflow.js",
-            ProjectSummary:
-              "This project is a face and emotion detection web app. The project is built using HTML, CSS, and vanilla JavaScript. In this project I have used tensorflow.js API to help detect faces and emotions using the webcam and then dynamically paint the output data (detected face box, emotions, and other details) from the API using HTML canvas.",
-            GitHubURL: "https://github.com/CatsInTech/Rezume",
-            DeployedURL: "https://github.com/CatsInTech/Rezume",
-          },
-          {
-            Title: "Face and Emotion Detection Web App",
-            TechStack: "JavaScript, Tensorflow.js",
-            ProjectSummary:
-              "This project is a face and emotion detection web app. The project is built using HTML, CSS, and vanilla JavaScript. In this project I have used tensorflow.js API to help detect faces and emotions using the webcam and then dynamically paint the output data (detected face box, emotions, and other details) from the API using HTML canvas.",
-            GitHubURL: "https://github.com/CatsInTech/Rezume",
-            DeployedURL: "https://github.com/CatsInTech/Rezume",
-          },
-        ],
-      },
-      Skills: {
-        TechnicalSkills: "JavaScript, Ruby, C++",
-        SoftSkills: "Confident, Good Listener, Creative",
       },
       Hobbies: {
         Hobbies: "Playing basketball, Music",

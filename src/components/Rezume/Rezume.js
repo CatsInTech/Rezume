@@ -14,6 +14,31 @@ const Rezume = ({
 
   // onClickHandle Functions ----------------------------------------------------------------------------
 
+  //This function will handle onclick event for ExperienceBlock. This function updates the "Current" of the Experiences to the experience that is just clicked so that the experience form displays the details of the experience that has been clicked.
+  const handleOnClickExperienceBlock = (Index) => {
+    // The below code is a better way of implementation... but for some reason ChangePage() is not working as expected
+    // console.log(appState.CurrentPage);
+    // ChangePage("Experiences");
+    // console.log(appState.CurrentPage);
+    // SetSection("Experiences", { ...appState.Resume.Experiences, Current: Index });
+    setAppState({
+      ...appState,
+      CurrentPage: "Experiences",
+      Resume: {
+        ...appState.Resume,
+        Experiences: { ...appState.Resume.Experiences, Current: Index },
+      },
+    });
+  };
+
+  // This function is used to delete the experience from the experience List
+  const handleOnClickExperienceDelete = (Index) => {
+    SetSection("Experiences", {
+      ...appState.Resume.Experiences,
+      List: appState.Resume.Experiences.List.splice(Index, 1),
+    });
+  };
+
   //This function will handle onclick event for ProjectBlock. This function updates the "Current" of the Projects to the project that is just clicked so that the projects form displays the details of the project that has been clicked.
   const handleOnClickProjectBlock = (Index) => {
     // The below code is a better way of implementation... but for some reason ChangePage() is not working as expected
@@ -30,7 +55,7 @@ const Rezume = ({
       },
     });
   };
-
+  // This function is used to delete the experience from the experience List
   const handleOnClickProjectDelete = (Index) => {
     SetSection("Projects", {
       ...appState.Resume.Projects,
@@ -39,6 +64,86 @@ const Rezume = ({
   };
 
   // Listable Blocks----------------------------------------------------------------------------
+
+  const ExperienceBlock = ({
+    Title,
+    Type,
+    Employer,
+    EmployerURL,
+    StartDate,
+    EndDate,
+    Location,
+    TechStack,
+    ExperienceSummary,
+    GitHubURL,
+    DeployedURL,
+    Index,
+  }) => {
+    return (
+      <div
+        className="exp"
+        onClick={() => {
+          handleOnClickExperienceBlock(Index);
+        }}
+      >
+        <p
+          className="exp-delete"
+          onClick={() => {
+            handleOnClickExperienceDelete(Index);
+          }}
+        >
+          Delete
+        </p>
+        <p className="exp-title">{Title}</p>
+        <p className="exp-subtitle">
+          <span className="exp-subtitle-start-date">[ {StartDate} </span>
+          <span>to</span>
+          <span className="exp-subtitle-end-date"> {EndDate} ],</span>
+          <span className="exp-subtitle-type">{Type}</span>
+        </p>
+        <p className="exp-employer">
+          {/* If the user provide the EmployerUrl then the Employe will act as a Link button else if the user does not provide the url the Employer will act as a normal text */}
+          {EmployerURL !== "" ? (
+            <a href={EmployerURL} target="_blank" rel="noopener noreferrer">
+              {Employer}
+            </a>
+          ) : (
+            <span>{Employer}</span>
+          )}
+          <span>, {Location}</span>
+        </p>
+
+        <p className="exp-techstack">{TechStack}</p>
+        <p>{ExperienceSummary}</p>
+        {/* Github url is optional if the user does not enter any github url then we are not going to display the github link button  */}
+        {GitHubURL !== "" ? (
+          <a
+            className="prj-link prj-link-github"
+            href={GitHubURL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+        ) : (
+          <></>
+        )}
+        {/* Deployed / project url is optional if the user does not enter any url then we are not going to display the project url button  */}
+        {DeployedURL !== "" ? (
+          <a
+            className="prj-link prj-link-deplyedurl"
+            href={DeployedURL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Project Url
+          </a>
+        ) : (
+          <></>
+        )}
+      </div>
+    );
+  };
 
   const ProjectBlock = ({
     Title,
@@ -132,6 +237,53 @@ const Rezume = ({
         <strong className="position">{CurrentPosition}</strong>
         {Summary}
       </p>
+      {/* Experience Section ------------------------------------------------------ */}
+      {/* If there is no projects the we should not display the "Experience" heading in the resume */}
+      {Resume.Experiences.List.length > 0 ? (
+        <>
+          <hr />
+          <h3>
+            <strong>EXPERIENCES</strong>
+          </h3>
+        </>
+      ) : (
+        <></>
+      )}
+
+      {Resume.Experiences.List.map((experience, key) => {
+        const {
+          Title,
+          Type,
+          Employer,
+          EmployerURL,
+          StartDate,
+          EndDate,
+          Location,
+          TechStack,
+          ExperienceSummary,
+          GitHubURL,
+          DeployedURL,
+        } = experience;
+        return (
+          <ExperienceBlock
+            key={key}
+            Title={Title}
+            Type={Type}
+            Employer={Employer}
+            EmployerURL={EmployerURL}
+            StartDate={StartDate}
+            EndDate={EndDate}
+            Location={Location}
+            TechStack={TechStack}
+            ExperienceSummary={ExperienceSummary}
+            GitHubURL={GitHubURL}
+            DeployedURL={DeployedURL}
+            // This Index prop will help us to select the perticular project block on click
+            Index={key}
+          />
+        );
+      })}
+
       {/* Projects Section ------------------------------------------------------ */}
       {/* If there is no projects the we should not display the "Projects" heading in the resume */}
       {Resume.Projects.List.length > 0 ? (
@@ -155,13 +307,13 @@ const Rezume = ({
         } = project;
         return (
           <ProjectBlock
+            key={key}
             Title={Title}
             TechStack={TechStack}
             ProjectSummary={ProjectSummary}
             GitHubURL={GitHubURL}
             DeployedURL={DeployedURL}
-            key={key}
-            //
+            // This Index prop will help us to select the perticular project block on click
             Index={key}
           />
         );
