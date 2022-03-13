@@ -8,7 +8,7 @@ const FormElement = ({ Label, Value, Type, onChange }) => {
           case "Text":
             return (
               <>
-                <label for={`ID-${Label}`}>{Label}</label>
+                <label htmlFor={`ID-${Label}`}>{Label}</label>
                 <input
                   id={`ID-${Label}`}
                   type="text"
@@ -22,7 +22,7 @@ const FormElement = ({ Label, Value, Type, onChange }) => {
           case "TextArea":
             return (
               <>
-                <label for={`ID-${Label}`}>{Label}</label>
+                <label htmlFor={`ID-${Label}`}>{Label}</label>
                 <textarea
                   id={`ID-${Label}`}
                   className="form-control rounded-0"

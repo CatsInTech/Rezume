@@ -14,18 +14,74 @@ const App = () => {
         Summary:
           "Strong proficiency in JavaScript, including DOM manipulation and the JavaScript object model and thorough understanding of React JS and its core principles. Experience with popular React.js workflows (such as Flux or Redux). Familiarity with newer specifications of EcmaScript.",
       },
-      Experience: [],
-      Education: [],
-      Awards: [],
+      // Experience, Education, Awards, Projects object have the same item/Object member names --(Current, List) because in the FormELement.js we require this "Current" and "List" to render the form properly
+      Experience: {
+        Current: 0,
+        List: [
+          {
+            Title: "Face and Emotion Detection Web App",
+            TechStack: "JavaScript, Tensorflow.js",
+            ProjectSummary:
+              "This project is a face and emotion detection web app. The project is built using HTML, CSS, and vanilla JavaScript. In this project I have used tensorflow.js API to help detect faces and emotions using the webcam and then dynamically paint the output data (detected face box, emotions, and other details) from the API using HTML canvas.",
+            GitHubURL: "https://github.com/CatsInTech/Rezume",
+            DeployedURL: "https://github.com/CatsInTech/Rezume",
+          },
+        ],
+      },
+      Education: {
+        Current: 0,
+        List: [
+          {
+            Title: "Face and Emotion Detection Web App",
+            TechStack: "JavaScript, Tensorflow.js",
+            ProjectSummary:
+              "This project is a face and emotion detection web app. The project is built using HTML, CSS, and vanilla JavaScript. In this project I have used tensorflow.js API to help detect faces and emotions using the webcam and then dynamically paint the output data (detected face box, emotions, and other details) from the API using HTML canvas.",
+            GitHubURL: "https://github.com/CatsInTech/Rezume",
+            DeployedURL: "https://github.com/CatsInTech/Rezume",
+          },
+        ],
+      },
+      Awards: {
+        Current: 0,
+        List: [
+          {
+            Title: "Face and Emotion Detection Web App",
+            TechStack: "JavaScript, Tensorflow.js",
+            ProjectSummary:
+              "This project is a face and emotion detection web app. The project is built using HTML, CSS, and vanilla JavaScript. In this project I have used tensorflow.js API to help detect faces and emotions using the webcam and then dynamically paint the output data (detected face box, emotions, and other details) from the API using HTML canvas.",
+            GitHubURL: "https://github.com/CatsInTech/Rezume",
+            DeployedURL: "https://github.com/CatsInTech/Rezume",
+          },
+        ],
+      },
       Projects: {
-				ProjTitle: "Face and Emotion Detection Web App",
-				TechStack: "JavaScript, Tensorflow.js",
-				Summary: "This project is a face and emotion detection web app. The project is built using HTML, CSS, and vanilla JavaScript. In this project I have used tensorflow.js API to help detect faces and emotions using the webcam and then dynamically paint the output data (detected face box, emotions, and other details) from the API using HTML canvas.",
-				ProjLocation: "London, United Kingdom",
-				ProjURL: "https://github.com/CatsInTech/Rezume"
-			},
-      Skills: [],
-      Hobbies: [],
+        Current: 0,
+        List: [
+          {
+            Title: "Face and Emotion Detection Web App",
+            TechStack: "JavaScript, Tensorflow.js",
+            ProjectSummary:
+              "This project is a face and emotion detection web app. The project is built using HTML, CSS, and vanilla JavaScript. In this project I have used tensorflow.js API to help detect faces and emotions using the webcam and then dynamically paint the output data (detected face box, emotions, and other details) from the API using HTML canvas.",
+            GitHubURL: "https://github.com/CatsInTech/Rezume",
+            DeployedURL: "https://github.com/CatsInTech/Rezume",
+          },
+          {
+            Title: "Face and Emotion Detection Web App",
+            TechStack: "JavaScript, Tensorflow.js",
+            ProjectSummary:
+              "This project is a face and emotion detection web app. The project is built using HTML, CSS, and vanilla JavaScript. In this project I have used tensorflow.js API to help detect faces and emotions using the webcam and then dynamically paint the output data (detected face box, emotions, and other details) from the API using HTML canvas.",
+            GitHubURL: "https://github.com/CatsInTech/Rezume",
+            DeployedURL: "https://github.com/CatsInTech/Rezume",
+          },
+        ],
+      },
+      Skills: {
+        TechnicalSkills: "JavaScript, Ruby, C++",
+        SoftSkills: "Confident, Good Listener, Creative",
+      },
+      Hobbies: {
+        Hobbies: "Playing basketball, Music",
+      },
       Contact: {
         Email: "priya@cloudroit.co.uk",
         Website: "priya.ws",
@@ -39,7 +95,7 @@ const App = () => {
   const SetSection = (Section, Content) => {
     setAppState({
       ...appState,
-      Resume: { ...appState.Resume, [Section]: Content }
+      Resume: { ...appState.Resume, [Section]: Content },
     });
   };
   return (
@@ -52,7 +108,10 @@ const App = () => {
       <Main
         CurrentPage={appState.CurrentPage}
         Resume={appState.Resume}
+        ChangePage={ChangePage}
         SetSection={SetSection}
+        appState={appState}
+        setAppState={setAppState}
       />
       <Footer />
     </div>
