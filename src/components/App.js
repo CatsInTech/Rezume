@@ -54,7 +54,8 @@ const App = () => {
         ],
       },
       Hobbies: {
-        Hobbies: "Playing basketball, Music",
+				// The structure of Hobbies is so and not simply a string because in the Form.js it looks for an object and then it renders the elements inside the object
+        Hobbies: "(optional) Playing basketball, Music",
       },
       Contact: {
         Email: "priya@cloudroit.co.uk",

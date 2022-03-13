@@ -336,6 +336,19 @@ const Rezume = ({
           />
         );
       })}
+      {/* Hobbies Section ------------------------------------------------------ */}
+      {/* If there is no hobbie then we should not display the "Hobbies" heading in the resume */}
+      {Resume.Hobbies.Hobbies !== "" ? (
+        <>
+          <hr />
+          <h3>
+            <strong>HOBBIES</strong>
+          </h3>
+        </>
+      ) : (
+        <></>
+      )}
+      <p className="hobbies">{Resume.Hobbies.Hobbies}</p>
     </div>
   );
 };
