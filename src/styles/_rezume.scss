@@ -1,17 +1,17 @@
 .rezume-rezume {
-	@import "projectBlock";
-	@import "experienceBlock";
-	@import "skills";
-	@import "hobbies";
-	@import "awards";
-	@import "educations";
+  @import "projectBlock";
+  @import "experienceBlock";
+  @import "skills";
+  @import "hobbies";
+  @import "awards";
+  @import "educations";
   @include box-shadow(5px);
   background-color: #fff;
   padding: 75px 100px;
   min-height: 80vh;
-	cursor: default;
-	// The aspect ratio of A4 size paper is (1:1.4142) so to maintain the widht to height ratio we have use the calc()
-	min-height: calc(60vw * 1.4142);
+  cursor: default;
+  // The aspect ratio of A4 size paper is (1:1.4142) so to maintain the widht to height ratio we have use the calc()
+  min-height: calc(60vw * 1.4142);
   margin-right: 20px;
   position: relative;
   &-contact {

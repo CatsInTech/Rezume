@@ -451,13 +451,8 @@ const Rezume = ({
       )}
 
       {Resume.Projects.List.map((project, key) => {
-        const {
-          Title,
-          TechStack,
-          ProjectSummary,
-          GitHubURL,
-          DeployedURL,
-        } = project;
+        const { Title, TechStack, ProjectSummary, GitHubURL, DeployedURL } =
+          project;
         return (
           <ProjectBlock
             key={key}
@@ -485,13 +480,8 @@ const Rezume = ({
       )}
       <ul>
         {Resume.Educations.List.map((education, key) => {
-          const {
-            Qualification,
-            Institute,
-            Score,
-            StartDate,
-            EndDate,
-          } = education;
+          const { Qualification, Institute, Score, StartDate, EndDate } =
+            education;
           return (
             <li key={key}>
               <EducationBlock

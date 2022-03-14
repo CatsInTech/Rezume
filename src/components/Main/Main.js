@@ -2,7 +2,14 @@ import React from "react";
 import Rezume from "../Rezume/Rezume";
 import Forms from "../Forms/Forms";
 
-const Main = ({ CurrentPage, Resume, SetSection, appState, setAppState,ChangePage }) => {
+const Main = ({
+  CurrentPage,
+  Resume,
+  SetSection,
+  appState,
+  setAppState,
+  ChangePage,
+}) => {
   return (
     <div className="container-fluid rezume-main">
       <div className="row">
@@ -16,8 +23,8 @@ const Main = ({ CurrentPage, Resume, SetSection, appState, setAppState,ChangePag
         <div className="col-9">
           <Rezume
             Resume={Resume}
-						CurrentPage={CurrentPage}
-						ChangePage={ChangePage}
+            CurrentPage={CurrentPage}
+            ChangePage={ChangePage}
             SetSection={SetSection}
             appState={appState}
             setAppState={setAppState}
