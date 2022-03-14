@@ -31,18 +31,9 @@ const App = () => {
         Current: 0,
         List: [],
       },
-      Education: {
+      Educations: {
         Current: 0,
-        List: [
-          {
-            Title: "Face and Emotion Detection Web App",
-            TechStack: "JavaScript, Tensorflow.js",
-            ProjectSummary:
-              "This project is a face and emotion detection web app. The project is built using HTML, CSS, and vanilla JavaScript. In this project I have used tensorflow.js API to help detect faces and emotions using the webcam and then dynamically paint the output data (detected face box, emotions, and other details) from the API using HTML canvas.",
-            GitHubURL: "https://github.com/CatsInTech/Rezume",
-            DeployedURL: "https://github.com/CatsInTech/Rezume",
-          },
-        ],
+        List: [],
       },
       Hobbies: {
         // The structure of Hobbies is so and not simply a string because in the Form.js it looks for an object and then it renders the elements inside the object

@@ -2,14 +2,6 @@ import React from "react";
 import FormElement from "./_FormElement";
 
 // Dummy Data to add new elements into the array ----------------------------------------------------
-const dummyProject = {
-  Title: "New Project Title",
-  TechStack: "Ex : JavaScript, Tensorflow.js",
-  ProjectSummary:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
-  GitHubURL: "(Optional) Ex:https://github.com/yourAccount/repo",
-  DeployedURL: "(Optional) Ex:https://project.com",
-};
 const dummyExperience = {
   Title: "New Experience Title",
   Type: "Ex: Internship or Full Time",
@@ -25,9 +17,25 @@ const dummyExperience = {
   DeployedURL: "(Optional) Ex:https://project.com",
 };
 const dummyAward = {
-	AwardSummary:"I have won so and so prize in so and so competition",
-	CertificateLink:"(optional) Ex:https://certificateLink"
-}
+  AwardSummary: "I have won so and so prize in so and so competition",
+  CertificateLink: "(optional) Ex:https://certificateLink",
+};
+const dummyProject = {
+  Title: "New Project Title",
+  TechStack: "Ex : JavaScript, Tensorflow.js",
+  ProjectSummary:
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
+  GitHubURL: "(Optional) Ex:https://github.com/yourAccount/repo",
+  DeployedURL: "(Optional) Ex:https://project.com",
+};
+const dummyEducation = {
+  Qualification:
+    "Ex : Bachelor of Technology in Computer Science and Engineering",
+  Institute: "Ex : XYZ University, Delhi",
+  Score: "Ex: 9.5cgpa or 95%",
+  StartDate: "Ex : 1 March, 2022",
+  EndDate: "Ex : 1 April, 2022",
+};
 
 // ---------------------------------------------------------------------------------------------------
 
@@ -43,14 +51,16 @@ const isPageWithoutArray = (CurrentPage) => {
 
 const Forms = ({ CurrentPage, SetSection, Resume }) => {
   // This function is used to add new Item to the List ----------------------------------------
-  const addItem = (CurrentPage) => {
-    if (CurrentPage === "Projects") {
+  const addItem = (CurrPage) => {
+    if (CurrPage === "Projects") {
       addItemToProject();
-    } else if (CurrentPage === "Experiences") {
+    } else if (CurrPage === "Experiences") {
       addItemToExperiences();
-    }else if(CurrentPage === "Awards"){
+    } else if (CurrPage === "Awards") {
       addItemToAwards();
-		}
+    } else if (CurrPage === "Educations") {
+      addItemToEducations();
+    }
   };
   const addItemToProject = () => {
     var newList = [...Resume["Projects"].List, dummyProject];
@@ -72,6 +82,14 @@ const Forms = ({ CurrentPage, SetSection, Resume }) => {
     var newList = [...Resume["Awards"].List, dummyAward];
     const newItemIndex = newList.length - 1;
     SetSection("Awards", {
+      Current: newItemIndex,
+      List: newList,
+    });
+  };
+  const addItemToEducations = () => {
+    var newList = [...Resume["Educations"].List, dummyEducation];
+    const newItemIndex = newList.length - 1;
+    SetSection("Educations", {
       Current: newItemIndex,
       List: newList,
     });

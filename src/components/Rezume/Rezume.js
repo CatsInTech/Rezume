@@ -41,9 +41,7 @@ const Rezume = ({
   //This function will handle onclick event for ExperienceBlock. This function updates the "Current" of the Experiences to the experience that is just clicked so that the experience form displays the details of the experience that has been clicked.
   const handleOnClickAwardsBlock = (Index) => {
     // The below code is a better way of implementation... but for some reason ChangePage() is not working as expected
-    // console.log(appState.CurrentPage);
     // ChangePage("Experiences");
-    // console.log(appState.CurrentPage);
     // SetSection("Experiences", { ...appState.Resume.Experiences, Current: Index });
     setAppState({
       ...appState,
@@ -66,9 +64,7 @@ const Rezume = ({
   //This function will handle onclick event for ProjectBlock. This function updates the "Current" of the Projects to the project that is just clicked so that the projects form displays the details of the project that has been clicked.
   const handleOnClickProjectBlock = (Index) => {
     // The below code is a better way of implementation... but for some reason ChangePage() is not working as expected
-    // console.log(appState.CurrentPage);
     // ChangePage("Projects");
-    // console.log(appState.CurrentPage);
     // SetSection("Projects", { ...appState.Resume.Projects, Current: Index });
     setAppState({
       ...appState,
@@ -84,6 +80,28 @@ const Rezume = ({
     SetSection("Projects", {
       ...appState.Resume.Projects,
       List: appState.Resume.Projects.List.splice(Index, 1),
+    });
+  };
+
+  //This function will handle onclick event for EducationBlock. This function updates the "Current" of the Educations to the education that is just clicked so that the educations form displays the details of the education that has been clicked.
+  const handleOnClickEducationBlock = (Index) => {
+    // The below code is a better way of implementation... but for some reason ChangePage() is not working as expected
+    // ChangePage("Educations");
+    // SetSection("Educations", { ...appState.Resume.Projects, Current: Index });
+    setAppState({
+      ...appState,
+      CurrentPage: "Educations",
+      Resume: {
+        ...appState.Resume,
+        Educations: { ...appState.Resume.Educations, Current: Index },
+      },
+    });
+  };
+  // This function is used to delete the experience from the experience List
+  const handleOnClickEducationDelete = (Index) => {
+    SetSection("Educations", {
+      ...appState.Resume.Educations,
+      List: appState.Resume.Educations.List.splice(Index, 1),
     });
   };
 
@@ -182,7 +200,9 @@ const Rezume = ({
           onClick={() => {
             handleOnClickAwardsDelete(Index);
           }}
-        >Delete</p>
+        >
+          Delete
+        </p>
         <p className="award-desc">{AwardSummary}</p>
         {CertificateLink !== "" ? (
           <strong>
@@ -254,6 +274,40 @@ const Rezume = ({
     );
   };
 
+  const EducationBlock = ({
+    Qualification,
+    Institute,
+    Score,
+    StartDate,
+    EndDate,
+    Index,
+  }) => {
+    return (
+      <div
+        className="edu"
+        onClick={() => {
+          handleOnClickEducationBlock(Index);
+        }}
+      >
+        <p
+          className="edu-delete"
+          onClick={() => {
+            handleOnClickEducationDelete(Index);
+          }}
+        >
+          Delete
+        </p>
+        <p className="edu-qualification">{Qualification}</p>
+        <p className="edu-institute">{Institute}</p>
+        <p className="edu-subtitle">
+          <span className="edu-subtitle-start-date">[ {StartDate} </span>
+          <span>to</span>
+          <span className="edu-subtitle-end-date"> {EndDate} ],</span>
+        </p>
+        <p className="edu-score">Score : {Score}</p>
+      </div>
+    );
+  };
   // -----------------------------------------------------------------------------
 
   return (
@@ -348,7 +402,7 @@ const Rezume = ({
             ExperienceSummary={ExperienceSummary}
             GitHubURL={GitHubURL}
             DeployedURL={DeployedURL}
-            // This Index prop will help us to select the perticular project block on click
+            // This Index prop will help us to select the perticular experience block on click
             Index={key}
           />
         );
@@ -362,24 +416,26 @@ const Rezume = ({
           <h3>
             <strong>AWARDS</strong>
           </h3>
-          <ul>
-            {Resume.Awards.List.map((award, key) => {
-              const { AwardSummary, CertificateLink } = award;
-              return (
-                <li key={key}>
-                  <AwardsBlock
-                    AwardSummary={AwardSummary}
-                    CertificateLink={CertificateLink}
-                    Index={key}
-                  />
-                </li>
-              );
-            })}
-          </ul>
         </>
       ) : (
         <></>
       )}
+
+      <ul>
+        {Resume.Awards.List.map((award, key) => {
+          const { AwardSummary, CertificateLink } = award;
+          return (
+            <li key={key}>
+              <AwardsBlock
+                AwardSummary={AwardSummary}
+                CertificateLink={CertificateLink}
+                // This Index prop will help us to select the perticular award block on click
+                Index={key}
+              />
+            </li>
+          );
+        })}
+      </ul>
 
       {/* Projects Section ------------------------------------------------------ */}
       {/* If there is no projects then we should not display the "Projects" heading in the resume */}
@@ -415,6 +471,43 @@ const Rezume = ({
           />
         );
       })}
+      {/* Education Section ------------------------------------------------------ */}
+      {/* If there is no education then we should not display the "Education" heading in the resume */}
+      {Resume.Educations.List.length > 0 ? (
+        <>
+          <hr />
+          <h3>
+            <strong>EDUCATIONS</strong>
+          </h3>
+        </>
+      ) : (
+        <></>
+      )}
+      <ul>
+        {Resume.Educations.List.map((education, key) => {
+          const {
+            Qualification,
+            Institute,
+            Score,
+            StartDate,
+            EndDate,
+          } = education;
+          return (
+            <li key={key}>
+              <EducationBlock
+                Qualification={Qualification}
+                Institute={Institute}
+                Score={Score}
+                StartDate={StartDate}
+                EndDate={EndDate}
+                // This Index prop will help us to select the perticular education block on click
+                Index={key}
+              />
+            </li>
+          );
+        })}
+      </ul>
+
       {/* Hobbies Section ------------------------------------------------------ */}
       {/* If there is no hobbie then we should not display the "Hobbies" heading in the resume */}
       {Resume.Hobbies.Hobbies !== "" ? (
