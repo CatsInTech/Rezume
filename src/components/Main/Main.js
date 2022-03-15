@@ -2,7 +2,7 @@ import React from "react";
 import Rezume from "../Rezume/Rezume";
 import Forms from "../Forms/Forms";
 
-const Main = ({ CurrentPage, Resume, SetSection }) => {
+const Main = ({ CurrentPage, Resume, SetSection, SetSwitch, ImageHandler }) => {
   return (
     <div className="container-fluid rezume-main">
       <div className="row">
@@ -10,6 +10,8 @@ const Main = ({ CurrentPage, Resume, SetSection }) => {
           <Forms
             CurrentPage={CurrentPage}
             SetSection={SetSection}
+            SetSwitch={SetSwitch}
+            ImageHandler={ImageHandler}
             Resume={Resume}
           />
         </div>
