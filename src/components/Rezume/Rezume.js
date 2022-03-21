@@ -123,27 +123,27 @@ const Rezume = ({
   }) => {
     return (
       <div
-        className="exp"
+        className="experience"
         onClick={() => {
           handleOnClickExperienceBlock(Index);
         }}
       >
         <p
-          className="exp-delete"
+          className="experience-delete"
           onClick={() => {
             handleOnClickExperienceDelete(Index);
           }}
         >
           Delete
         </p>
-        <p className="exp-title">{Title}</p>
-        <p className="exp-subtitle">
-          <span className="exp-subtitle-start-date">[ {StartDate} </span>
+        <p className="experience-title">{Title}</p>
+        <p className="experience-subtitle">
+          <span className="experience-subtitle-start-date">[ {StartDate} </span>
           <span>to</span>
-          <span className="exp-subtitle-end-date"> {EndDate} ],</span>
-          <span className="exp-subtitle-type">{Type}</span>
+          <span className="experience-subtitle-end-date"> {EndDate} ],</span>
+          <span className="experience-subtitle-type">{Type}</span>
         </p>
-        <p className="exp-employer">
+        <p className="experience-employer">
           {/* If the user provide the EmployerUrl then the Employe will act as a Link button else if the user does not provide the url the Employer will act as a normal text */}
           {EmployerURL !== "" ? (
             <a href={EmployerURL} target="_blank" rel="noopener noreferrer">
@@ -155,12 +155,12 @@ const Rezume = ({
           <span>, {Location}</span>
         </p>
 
-        <p className="exp-techstack">{TechStack}</p>
+        <p className="experience-techstack">{TechStack}</p>
         <p>{ExperienceSummary}</p>
         {/* Github url is optional if the user does not enter any github url then we are not going to display the github link button  */}
         {GitHubURL !== "" ? (
           <a
-            className="exp-link exp-link-github"
+            className="experience-link experience-link-github"
             href={GitHubURL}
             target="_blank"
             rel="noopener noreferrer"
@@ -173,7 +173,7 @@ const Rezume = ({
         {/* Deployed / project url is optional if the user does not enter any url then we are not going to display the project url button  */}
         {DeployedURL !== "" ? (
           <a
-            className="exp-link exp-link-deplyedurl"
+            className="experience-link experience-link-deplyedurl"
             href={DeployedURL}
             target="_blank"
             rel="noopener noreferrer"
@@ -227,13 +227,13 @@ const Rezume = ({
   }) => {
     return (
       <div
-        className="prj"
+        className="project"
         onClick={() => {
           handleOnClickProjectBlock(Index);
         }}
       >
         <p
-          className="prj-delete"
+          className="project-delete"
           onClick={() => {
             handleOnClickProjectDelete(Index);
           }}
@@ -241,13 +241,13 @@ const Rezume = ({
           Delete
         </p>
 
-        <p className="prj-title">{Title}</p>
-        <p className="prj-techstack">{TechStack}</p>
-        <p className="prj-summary">{ProjectSummary}</p>
+        <p className="project-title">{Title}</p>
+        <p className="project-techstack">{TechStack}</p>
+        <p className="project-summary">{ProjectSummary}</p>
         {/* Github url is optional if the user does not enter any github url then we are not going to display the github link button  */}
         {GitHubURL !== "" ? (
           <a
-            className="prj-link prj-link-github"
+            className="project-link project-link-github"
             href={GitHubURL}
             target="_blank"
             rel="noopener noreferrer"
@@ -260,7 +260,7 @@ const Rezume = ({
         {/* Deployed / project url is optional if the user does not enter any url then we are not going to display the project url button  */}
         {DeployedURL !== "" ? (
           <a
-            className="prj-link prj-link-deplyedurl"
+            className="project-link project-link-deployedurl"
             href={DeployedURL}
             target="_blank"
             rel="noopener noreferrer"
@@ -284,27 +284,27 @@ const Rezume = ({
   }) => {
     return (
       <div
-        className="edu"
+        className="education"
         onClick={() => {
           handleOnClickEducationBlock(Index);
         }}
       >
         <p
-          className="edu-delete"
+          className="education-delete"
           onClick={() => {
             handleOnClickEducationDelete(Index);
           }}
         >
           Delete
         </p>
-        <p className="edu-qualification">{Qualification}</p>
-        <p className="edu-institute">{Institute}</p>
-        <p className="edu-subtitle">
-          <span className="edu-subtitle-start-date">[ {StartDate} </span>
+        <p className="education-qualification">{Qualification}</p>
+        <p className="education-institute">{Institute}</p>
+        <p className="education-subtitle">
+          <span className="education-subtitle-start-date">[ {StartDate} </span>
           <span>to</span>
-          <span className="edu-subtitle-end-date"> {EndDate} ],</span>
+          <span className="education-subtitle-end-date"> {EndDate} ],</span>
         </p>
-        <p className="edu-score">Score : {Score}</p>
+        <p className="education-score">Score : {Score}</p>
       </div>
     );
   };
