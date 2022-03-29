@@ -1,14 +1,14 @@
 import React from "react";
 import FormElement from "./_FormElement";
 
-const Forms = ({ CurrentPage, SetSection, Resume }) => {
+const Forms = ({ CurrentPage, SetSection, SetSwitch, ImageHandler, Resume }) => {
   return (
     <div className="rezume-forms">
       {Resume[CurrentPage] &&
         Object.keys(Resume[CurrentPage]).map((fe, key) => (
           <FormElement
             key={key}
-            Type={fe === "Summary" ? "TextArea" : "Text"}
+            Type={fe === "Summary" ? "TextArea" : fe === "ProfilePicture" ? "Switch" : "Text"}
             Label={fe}
             Value={Resume[CurrentPage][fe]}
             onChange={e =>
@@ -17,6 +17,8 @@ const Forms = ({ CurrentPage, SetSection, Resume }) => {
                 [fe]: e.target.value
               })
             }
+            onSwitch={() => SetSwitch()}
+            ImageHandler={e => ImageHandler(e)}
           />
         ))}
     </div>
