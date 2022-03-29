@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #003100;
+  background-color: #000000;
   margin-bottom: 50px;
   @include box-shadow(3px, 0.25);
   &-brand {
@@ -12,4 +12,13 @@
     background-color: transparent;
     outline: none;
   }
+}
+
+.navbar .btn {
+  background: #B29155;
+  color: #000;
+  font-weight: 500;
+}
+.navbar .btn:focus {
+  box-shadow: none;
 }
