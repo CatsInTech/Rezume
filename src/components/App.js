@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Header from "./Header/Header";
 import Main from "./Main/Main";
+import AboutUs from "./Main/AboutUs";
 import Footer from "./Footer/Footer";
-
-const App = () => {
+let isClicked=false;
+const App = () => {const ref=useRef();
   const [appState, setAppState] = useState({
     CurrentPage: "About",
     Resume: {
@@ -33,18 +34,22 @@ const App = () => {
   const SetSection = (Section, Content) => {
     setAppState({ Resume: { ...appState.Resume, [Section]: Content } });
    };
+ 
   return (
     <div className="rezume">
       <Header
         ChangePage={ChangePage}
         Resume={appState.Resume}
         CurrentPage={appState.CurrentPage}
+        ref={ref}
       />
-      <Main
+     {
+     (!isClicked) ? <Main
         CurrentPage={appState.CurrentPage}
         Resume={appState.Resume}
         SetSection={SetSection}
-      />
+      /> :
+      <AboutUs /> }
       <Footer/>
     </div>
   );

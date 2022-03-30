@@ -1,11 +1,11 @@
 import React from "react";
-//import { Link } from "react-router-dom";
+
 import CardText from "../Cards/CardText";
 import CardImage from "../Cards/CardImage";
 function AboutUs(){
     
-        return( <div>
-<h1>About Us</h1>
+        return( <div className="text-center">
+<h1 ><u>About Us</u></h1>
 <div class="row">
         <div class="col col-lg-6">
 <CardText title="What We Do?" 
