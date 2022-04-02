@@ -21,7 +21,11 @@ const App = () => {
       },
       Experience: [],
       Education: [],
-      Awards: [],
+      Awards: {
+        Award_Name: "your award name",
+        Recieved : "Recieved year",
+        Description: "short description of your award",
+      },
       Projects: [],
       Skills: [],
       Hobbies: [],
