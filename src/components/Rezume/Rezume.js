@@ -8,7 +8,9 @@ const Rezume = ({
   setAppState,
   ChangePage,
 }) => {
-  const { Name, Location, CurrentPosition, Summary } = Resume.About;
+  const { Name, Location, CurrentPosition, Summary, ProfilePicture } =
+    Resume.About;
+
   const { Email, Website, Phone } = Resume.Contact;
   const NameArray = Name.split(" ");
 
@@ -336,10 +338,17 @@ const Rezume = ({
         </p>
       </div>
       <h3>
+        {ProfilePicture.Set ? (
+          <img
+            src={ProfilePicture.ProfileImage}
+            className="img-thumbnail float-left profile-image"
+            alt="profile"
+          />
+        ) : null}
         <span>{NameArray.shift()}</span> {NameArray.join(" ")}
       </h3>
       <p className="location">{Location}</p>
-      <p className="summary">
+      <p className={`summary${ProfilePicture.Set ? " summary-margin" : ""}`}>
         <strong className="position">{CurrentPosition}</strong>
         {Summary}
       </p>

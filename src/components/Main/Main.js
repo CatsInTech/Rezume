@@ -9,6 +9,8 @@ const Main = ({
   appState,
   setAppState,
   ChangePage,
+  SetSwitch,
+  ImageHandler,
 }) => {
   return (
     <div className="container-fluid rezume-main">
@@ -17,6 +19,8 @@ const Main = ({
           <Forms
             CurrentPage={CurrentPage}
             SetSection={SetSection}
+            SetSwitch={SetSwitch}
+            ImageHandler={ImageHandler}
             Resume={Resume}
           />
         </div>

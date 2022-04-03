@@ -49,7 +49,13 @@ const isPageWithoutArray = (CurrentPage) => {
   );
 };
 
-const Forms = ({ CurrentPage, SetSection, Resume }) => {
+const Forms = ({
+  CurrentPage,
+  SetSection,
+  Resume,
+  SetSwitch,
+  ImageHandler,
+}) => {
   // This function is used to add new Item to the List ----------------------------------------
   const addItem = (CurrPage) => {
     if (CurrPage === "Projects") {
@@ -113,6 +119,8 @@ const Forms = ({ CurrentPage, SetSection, Resume }) => {
         ? Resume[CurrentPage] &&
           Object.keys(Resume[CurrentPage]).map((fe, key) => (
             <FormElement
+              onSwitch={() => SetSwitch()}
+              ImageHandler={(e) => ImageHandler(e)}
               key={key}
               Type={fe.includes("Summary") ? "TextArea" : "Text"}
               Label={fe}
@@ -130,6 +138,8 @@ const Forms = ({ CurrentPage, SetSection, Resume }) => {
             Resume[CurrentPage].List[Resume[CurrentPage].Current]
           ).map((fe, key) => (
             <FormElement
+              onSwitch={() => SetSwitch()}
+              ImageHandler={(e) => ImageHandler(e)}
               key={key}
               Type={fe.includes("Summary") ? "TextArea" : "Text"}
               Label={fe}

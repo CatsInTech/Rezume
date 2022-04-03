@@ -7,7 +7,7 @@
   @import "educationsBlock";
   @include box-shadow(5px);
   background-color: #fff;
-  padding: 75px 100px;
+  padding: 75px;
   min-height: 80vh;
   cursor: default;
   // The aspect ratio of A4 size paper is (1:1.4142) so to maintain the widht to height ratio we have use the calc()
@@ -46,5 +46,17 @@
         margin-right: 10px;
       }
     }
+    &.summary-margin {
+      margin-top: 6rem;
+    }
+  }
+  .profile-image {
+    position: relative;
+    top: -40px;
+    left: -30px;
+    border-radius: 50%;
+    margin: 0 10px 10px 0;
+    height: 10rem;
+    width: 10rem;
   }
 }

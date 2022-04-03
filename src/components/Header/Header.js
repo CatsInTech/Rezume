@@ -15,7 +15,14 @@ const Header = ({ ChangePage, CurrentPage, Resume }) => {
           />
         ))}
       </ul>
-      <button className="btn btn-primary btn-sm col-1">About Us</button>
+      <a
+        href="https://rezyume.co/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary btn-sm col-1"
+      >
+        About Us
+      </a>
     </nav>
   );
 };
