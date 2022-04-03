@@ -2,6 +2,7 @@ import React from "react";
 
 const Rezume = ({ Resume }) => {
   const { Name, Location, CurrentPosition, Summary, ProfilePicture } = Resume.About;
+  const { Award_Name ,Recieved ,Description} = Resume.Awards;
   const { Email, Website, Phone } = Resume.Contact;
   const NameArray = Name.split(" ");
   return (
@@ -48,6 +49,22 @@ const Rezume = ({ Resume }) => {
         <strong className="position">{CurrentPosition}</strong>
         {Summary}
       </p>
+      <div>
+      <h4><strong>Awards</strong> </h4>
+      <p>
+        
+          <strong>
+            {Award_Name}-{Recieved}
+          </strong>
+          <br/>
+          {Description} 
+          </p>
+        <p> </p>
+      </div>
+       
+
+     
+     
     </div>
   );
 };
