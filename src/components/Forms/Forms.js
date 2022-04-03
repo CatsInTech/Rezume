@@ -122,7 +122,13 @@ const Forms = ({
               onSwitch={() => SetSwitch()}
               ImageHandler={(e) => ImageHandler(e)}
               key={key}
-              Type={fe.includes("Summary") ? "TextArea" : "Text"}
+              Type={
+                fe.includes("Summary")
+                  ? "TextArea"
+                  : fe === "ProfilePicture"
+                  ? "Switch"
+                  : "Text"
+              }
               Label={fe}
               Value={Resume[CurrentPage][fe]}
               onChange={(e) =>
@@ -141,7 +147,13 @@ const Forms = ({
               onSwitch={() => SetSwitch()}
               ImageHandler={(e) => ImageHandler(e)}
               key={key}
-              Type={fe.includes("Summary") ? "TextArea" : "Text"}
+              Type={
+                fe.includes("Summary")
+                  ? "TextArea"
+                  : fe === "ProfilePicture"
+                  ? "Switch"
+                  : "Text"
+              }
               Label={fe}
               Value={Resume[CurrentPage].List[Resume[CurrentPage].Current][fe]}
               onChange={(e) =>
