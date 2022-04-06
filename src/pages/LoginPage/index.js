@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.css";
+import "./index.scss";
 import { Link } from "react-router-dom";
 
 function Login() {

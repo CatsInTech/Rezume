@@ -16,8 +16,8 @@ const App = () => {
         ProfilePicture: {
           Set: false,
           ProfileImage:
-            "https://cdn.nerdschalk.com/wp-content/uploads/2020/09/how-to-remove-profile-picture-on-zoom-12.png?width=150"
-        }
+            "https://cdn.nerdschalk.com/wp-content/uploads/2020/09/how-to-remove-profile-picture-on-zoom-12.png?width=150",
+        },
       },
       Experience: [],
       Education: [],
@@ -38,7 +38,7 @@ const App = () => {
   const SetSection = (Section, Content) => {
     setAppState({
       ...appState,
-      Resume: { ...appState.Resume, [Section]: Content }
+      Resume: { ...appState.Resume, [Section]: Content },
     });
   };
   const SetSwitch = () => {
@@ -50,16 +50,16 @@ const App = () => {
           ...appState.Resume.About,
           ProfilePicture: {
             ...appState.Resume.About.ProfilePicture,
-            Set: !(appState.Resume.About.ProfilePicture.Set)
-          }
-        }
-      }
-    })
+            Set: !appState.Resume.About.ProfilePicture.Set,
+          },
+        },
+      },
+    });
   };
   const ImageHandler = (e) => {
     const reader = new FileReader();
     reader.onload = () => {
-      if(reader.readyState === 2){
+      if (reader.readyState === 2) {
         setAppState({
           ...appState,
           Resume: {
@@ -68,15 +68,15 @@ const App = () => {
               ...appState.Resume.About,
               ProfilePicture: {
                 ...appState.Resume.About.ProfilePicture,
-                ProfileImage: reader.result
-              }
-            }
-          }
-        })
+                ProfileImage: reader.result,
+              },
+            },
+          },
+        });
       }
-    }
-    reader.readAsDataURL(e.target.files[0])
-  }
+    };
+    reader.readAsDataURL(e.target.files[0]);
+  };
   return (
     <div className="rezume">
       <Header
