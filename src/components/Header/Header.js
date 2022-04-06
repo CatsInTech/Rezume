@@ -1,5 +1,6 @@
 import React from "react";
 import NavLink from "./_NavLink";
+import {Link} from "react-router-dom";
 
 const Header = ({ ChangePage, CurrentPage, Resume }) => {
   return (
@@ -15,6 +16,9 @@ const Header = ({ ChangePage, CurrentPage, Resume }) => {
           />
         ))}
       </ul>
+      <Link to="/login" className="btn btn-primary btn-sm col-1">
+          Login
+      </Link>
       <a
         href="https://rezyume.co/"
         target="_blank"

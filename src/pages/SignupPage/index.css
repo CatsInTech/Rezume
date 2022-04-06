@@ -1,0 +1,39 @@
+/* .container{
+    background-color: #003100;
+} */
+
+.loginform{
+    background-color: #003100;
+    justify-content: center;
+    padding:2rem;
+    text-align: center;
+    align-items: center;
+    height: 400px;
+    margin: 10rem;
+}
+.inputSubmit{
+    background-color: #0000FF;
+    color:white;
+    margin-left: 1rem;
+    display:inline-block;  
+    border-radius:10px; 
+    width:100px;
+    outline-width: 0;
+    margin-right: 20px;
+}
+.input{
+    padding-left: 5rem;
+    padding:0.4rem;
+    margin: 1rem;
+    border-radius: 10px;
+    outline-width: 0;
+    width:350px;
+}
+.Submit-form{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+h1{
+    color: greenyellow;
+}
