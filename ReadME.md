@@ -2,7 +2,7 @@
 
 [![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-tomato.svg?style=flat&logo=git)](https://github.com/CatsInTech/Rezume/issues) [![GitHub stars](https://img.shields.io/github/stars/CatsInTech/Rezume.svg?logo=github)](https://github.com/CatsInTech/Rezume/stargazers) [![GitHub forks](https://img.shields.io/github/forks/CatsInTech/Rezume.svg?logo=github&color=teal)](https://github.com/CatsInTech/Rezume/network) [![GitHub top language](https://img.shields.io/github/languages/top/CatsInTech/Rezume?color=yellow&logo=javascript)](https://github.com/CatsInTech/Rezume) 
 
-Rezume is a free online portal for generating resumes without worrying about the styling and formatting. In the web portal, you only need to input the basic information which you want to have on your resume and it will automatically generate a decent resume for you.
+Rezume is a free online portal for generating resumes without worrying about styling and formatting. In the web portal, you only need to input the basic information which you want to have on your resume and it will automatically generate a decent resume for you.
 
 ## Table of Contents
 
@@ -36,9 +36,9 @@ Rezume is a free online portal for generating resumes without worrying about the
 As this is a React JS application, you need the following to support your development environment.
 - [ ] [Git](https://git-scm.com/downloads)
 - [ ] [Node.js](https://nodejs.org/en/) (Please go with any latest LTS versions)
-- [ ] [Linux Based Terminal](https://gitforwindows.org/), if you're using Windows and installed with Git.
+- [ ] [Linux Based Terminal](https://gitforwindows.org/) if you're using Windows and installed with Git.
 - [ ] [Google Chrome](https://www.google.com/chrome/) or a decent latest web browser.
-- [ ] **[Visual Studio Code](https://code.visualstudio.com/)** is the go-to editor for some complex languages like React using JSX or TypeScript and I finally agreed with [Wes Bos](https://wesbos.com/) that VS Code is better for development of React JS. Obviously, with VS Code, you should be having the right extensions to support your React JS development, but comparing with Sublime Text 2, VS Code is still in its infancy. Get these extensions and here's my [dotfile](https://gist.github.com/praveenscience/ebb5439f31774ad2fdc14cb9e7de1fc0):
+- [ ] **[Visual Studio Code](https://code.visualstudio.com/)** is the go-to editor for some complex languages like React using JSX or TypeScript and I finally agreed with [Wes Bos](https://wesbos.com/) that VS Code is better for development of React JS. Obviously, with VS Code, you should be having the right extensions to support your React JS development, but compared with Sublime Text 2, VS Code is still in its infancy. Get these extensions and here's my [dotfile](https://gist.github.com/praveenscience/ebb5439f31774ad2fdc14cb9e7de1fc0):
   - [ ] [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) helps you to format your JavaScript / TypeScript / CSS using [Prettier](https://github.com/prettier/prettier).
   - [ ] [Cobalt2 Theme Official](https://marketplace.visualstudio.com/items?itemName=wesbos.theme-cobalt2) is the theme used by Wes Bos, which comes with a nice user experience and a lot of awesome features. I am using a modified version of Cobalt2 that's a crossover between [Monokai](https://www.monokai.pro/) and Cobalt2.
   - [ ] [GitLens - Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) supercharges the Git capabilities built into Visual Studio Code. It helps you to visualize code authorship at a glance via Git blame annotations and code lens, seamlessly navigate and explore Git repositories, gain valuable insights via powerful comparison commands, and so much more.
@@ -50,7 +50,7 @@ As this is a React JS application, you need the following to support your develo
   
 ### Installation Instructions
 
-[Create React App](https://github.com/facebookincubator/create-react-app) is a comfortable environment for **learning React**, and is the best way to start building **a new [single-page](https://reactjs.org/docs/glossary.html#single-page-application) application** in React. This project makes use of Create React App. It sets up your development environment so that you can use the latest JavaScript features, provides a nice developer experience, and optimises your app for production. You’ll need to have [Node >= 8.10 and npm >= 5.6](https://nodejs.org/en/) on your machine.
+[Create React App](https://github.com/facebookincubator/create-react-app) is a comfortable environment for **learning React**, and is the best way to start building **a new [single-page](https://reactjs.org/docs/glossary.html#single-page-application) application** in React. This project makes use of Create React App. It sets up your development environment so that you can use the latest JavaScript features, provides a nice developer experience, and optimizes your app for production. You’ll need to have [Node >= 8.10 and npm >= 5.6](https://nodejs.org/en/) on your machine.
 
 ### Running the Application Locally
 
@@ -80,7 +80,7 @@ As this is a React JS application, you need the following to support your develo
    ```bash
    npm start
    ```
-3. Open http://localhost:3000/ on your favourite browser. Let anyone from the mentoring team know, if you are facing any troubles.
+3. Open http://localhost:3000/ on your favourite browser. Let anyone from the mentoring team know if you are facing any troubles.
 
 ## Contribution Guidelines
 
@@ -110,15 +110,15 @@ This project is part of the [GirlScript Summer of Code 2022](https://gssoc.girls
 
 ### Frequently Asked Questions(FAQs) for [GSSoC '22](https://gssoc.girlscript.tech/)
 
-> This project is accepting contributions under [GirlScript Summer of Code 2022](https://gssoc.girlscript.tech/) - three months long Open Source program conducted by [GirlScript Foundation](https://gssoc.girlscript.tech/).
+> This project is accepting contributions under [GirlScript Summer of Code 2022](https://gssoc.girlscript.tech/) - three monthly long Open Source program conducted by [GirlScript Foundation](https://gssoc.girlscript.tech/).
 
 [![GSSoC](https://raw.githubusercontent.com/GirlScriptSummerOfCode/MentorshipProgram/master/GSsoc%20Type%20Logo%20Black.png)](https://gssoc.girlscript.tech/)
 
-**1. How to start as a beginner so as to contribute to the project?**
-*There are many beginner level issues to begin with, which include documentation, development and design. Also, feel free to make issues for features as well as for reporting bugs. Participants can claim an issue by commenting that they are interested in it. We are also open to new ideas and suggestions.*
+**1. How to start as a beginner to contribute to the project?**
+*There are many beginner-level issues to begin with, which include documentation, development, and design. Also, feel free to make issues for features as well as for reporting bugs. Participants can claim an issue by commenting that they are interested in it. We are also open to new ideas and suggestions.*
 
 **2. How to communicate with us?**
-*All communication will happen on the Slack channel for this particular projects. Mentors can also be reached through GitHub. Avoid DMs and unnecessary mentions on slack and GitHub both. *Checkout [this](https://github.com/CatsInTech/Rezume/issues) issue for more.**
+*All communication will happen on the Slack channel for this particular project. Mentors can also be reached through GitHub. Avoid DMs and unnecessary mentions on slack and GitHub. *Check out [this](https://github.com/CatsInTech/Rezume/issues) issue for more.**
 
 **3. What is the deadline for any task submission?**
 *Mentors can assign issues to participants and also mention a deadline before which the issue is to be resolved. They can reassign issues in case of any delay, so be active and complete your tasks within the negotiated duration.*
@@ -143,7 +143,7 @@ This project is part of the [GirlScript Summer of Code 2022](https://gssoc.girls
 | **[Praveen Kumar Purushothaman](https://praveen.science/)**  |
 
 >**Need help?**
-Feel free to contact me at [catsintech@praveen.science](mailto:catsintech@praveen.science).
+Feel free to contact me at [catsintech@praveen.science](mail to:catsintech@praveen.science).
 
 [![GitHub followers](https://img.shields.io/github/followers/praveenscience.svg?label=Follow%20@praveenscience&style=social)](https://github.com/praveenscience/) [![Twitter Follow](https://img.shields.io/twitter/follow/praveenscience?style=social)](https://twitter.com/praveenscience) 
 
