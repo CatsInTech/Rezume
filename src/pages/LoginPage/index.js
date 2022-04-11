@@ -23,44 +23,34 @@ function Login() {
 
   return (
     <div className="container">
-      <div className="loginform">
+      <form className="loginform">
         <h1>Log In</h1>
-        <div className="emailField">
-          <input
-            className="inputEmail"
-            type="email"
-            placeholder="Email"
-            autocomplete="off"
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-          <div className="alert">{emailError}</div>
-        </div>
-        <div>
-          <input
-            className="inputPassword"
-            type="password"
-            placeholder="Password"
-            autocomplete="off"
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-          <div className="alert">{passwordError}</div>
-        </div>
-        <div className="Submit-form">
-          <div>
-            <input
-              className="inputSubmit"
-              type="submit"
-              value="Login"
-              onClick={handleSubmit}
-            />
-          </div>
-          <div>
-            <Link to="/Signup">New User ?</Link>
-          </div>
-        </div>
-      </div>
+        <input
+          className="inputEmail"
+          type="email"
+          placeholder="Email"
+          autocomplete="off"
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+        <p className="alert">{emailError}</p>
+        <input
+          className="inputPassword"
+          type="password"
+          placeholder="Password"
+          autocomplete="off"
+          onChange={(e) => setPassword(e.target.value)}
+          required
+        />
+        <p className="alert">{passwordError}</p>
+        <input
+          className="inputSubmit"
+          type="submit"
+          value="Login"
+          onClick={handleSubmit}
+        />
+        <Link to="/Signup">New User ?</Link>
+      </form>
     </div>
   );
 }
