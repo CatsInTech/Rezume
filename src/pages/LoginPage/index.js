@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 function Login() {
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
-  const blankStr = " ";
   const [emailError, setEmailError] = React.useState("");
   const [passwordError, setPasswordError] = React.useState("");
 
