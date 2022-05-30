@@ -1,0 +1,47 @@
+.loginform {
+  background-color: #003100;
+  padding: 2rem;
+  height: 400px;
+}
+.inputSubmit {
+  background-color: #0000ff;
+  color: white;
+  margin-left: 1rem;
+  border-radius: 10px;
+  width: 100px;
+  outline-width: 0;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.Submit-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+h1 {
+  color: greenyellow;
+}
+.alert {
+  color: red;
+  text-align: left;
+  margin: 0px;
+  margin-left: 12rem;
+  padding: 0px;
+}
+.inputEmail {
+  margin-bottom: 0px;
+  border-radius: 10px;
+  outline-width: 0;
+  width: 350px;
+  padding: 0.4rem;
+}
+.inputPassword {
+  margin-bottom: 0px;
+  border-radius: 10px;
+  outline-width: 0;
+  width: 350px;
+  padding: 0.4rem;
+  margin-top: 20px;
+}
