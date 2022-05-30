@@ -7,24 +7,31 @@ const FormElement = ({ Label, Value, Type, onChange, onSwitch, ImageHandler }) =
         switch (Type) {
           case "Text":
             return (
-              <input
-                type="text"
-                className="form-control rounded-0"
-                placeholder={Label}
-                value={Value}
-                onChange={onChange}
-              />
+              <>
+                <label htmlFor={`ID-${Label}`}>{Label}</label>
+                <input
+                  id={`ID-${Label}`}
+                  type="text"
+                  className="form-control rounded-0"
+                  placeholder={Label}
+                  value={Value}
+                  onChange={onChange}
+                />
+              </>
             );
           case "TextArea":
             return (
-              <textarea
-                className="form-control rounded-0"
-                placeholder={Label}
-                onChange={onChange}
-                rows="10"
-                value={Value}
-              >
-              </textarea>
+              <>
+                <label htmlFor={`ID-${Label}`}>{Label}</label>
+                <textarea
+                  id={`ID-${Label}`}
+                  className="form-control rounded-0"
+                  placeholder={Label}
+                  onChange={onChange}
+                  rows="10"
+                  value={Value}
+                ></textarea>
+              </>
             );
           case "Switch":
             return (

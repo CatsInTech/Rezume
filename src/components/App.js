@@ -19,12 +19,31 @@ const App = () => {
             "https://cdn.nerdschalk.com/wp-content/uploads/2020/09/how-to-remove-profile-picture-on-zoom-12.png?width=150",
         },
       },
-      Experience: [],
-      Education: [],
-      Awards: [],
-      Projects: [],
-      Skills: [],
-      Hobbies: [],
+      Skills: {
+        TechnicalSkills: "(optional) C++, c, JAVA",
+        SoftSkills: "(optional) Creative, Hardworking",
+      },
+      // Experience, Education, Awards, Projects object have the same item/Object member names --(Current, List) because in the FormELement.js we require this "Current" and "List" to render the form properly
+      Experiences: {
+        Current: 0,
+        List: [],
+      },
+      Awards: {
+        Current: 0,
+        List: [],
+      },
+      Projects: {
+        Current: 0,
+        List: [],
+      },
+      Educations: {
+        Current: 0,
+        List: [],
+      },
+      Hobbies: {
+        // The structure of Hobbies is so and not simply a string because in the Form.js it looks for an object and then it renders the elements inside the object
+        Hobbies: "(optional) Playing basketball, Music"
+      },
       Contact: {
         Email: "priya@cloudroit.co.uk",
         Website: "priya.ws",
@@ -87,7 +106,10 @@ const App = () => {
       <Main
         CurrentPage={appState.CurrentPage}
         Resume={appState.Resume}
+        ChangePage={ChangePage}
         SetSection={SetSection}
+        appState={appState}
+        setAppState={setAppState}
         SetSwitch={SetSwitch}
         ImageHandler={ImageHandler}
       />

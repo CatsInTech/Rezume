@@ -34,19 +34,20 @@ Rezume is a free online portal for generating resumes without worrying about the
 ### System Requirements
 
 As this is a React JS application, you need the following to support your development environment.
-- [ ] [Git](https://git-scm.com/downloads)
-- [ ] [Node.js](https://nodejs.org/en/) (Please go with any latest LTS versions)
-- [ ] [Linux Based Terminal](https://gitforwindows.org/), if you're using Windows and installed with Git.
-- [ ] [Google Chrome](https://www.google.com/chrome/) or a decent latest web browser.
-- [ ] **[Visual Studio Code](https://code.visualstudio.com/)** is the go-to editor for some complex languages like React using JSX or TypeScript and I finally agreed with [Wes Bos](https://wesbos.com/) that VS Code is better for development of React JS. Obviously, with VS Code, you should be having the right extensions to support your React JS development, but comparing with Sublime Text 2, VS Code is still in its infancy. Get these extensions and here's my [dotfile](https://gist.github.com/praveenscience/ebb5439f31774ad2fdc14cb9e7de1fc0):
-  - [ ] [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) helps you to format your JavaScript / TypeScript / CSS using [Prettier](https://github.com/prettier/prettier).
-  - [ ] [Cobalt2 Theme Official](https://marketplace.visualstudio.com/items?itemName=wesbos.theme-cobalt2) is the theme used by Wes Bos, which comes with a nice user experience and a lot of awesome features. I am using a modified version of Cobalt2 that's a crossover between [Monokai](https://www.monokai.pro/) and Cobalt2.
-  - [ ] [GitLens - Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) supercharges the Git capabilities built into Visual Studio Code. It helps you to visualize code authorship at a glance via Git blame annotations and code lens, seamlessly navigate and explore Git repositories, gain valuable insights via powerful comparison commands, and so much more.
-  - [ ] [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory) helps you to view git log, file history, compare branches or commits inside VS Code.
-  - [ ] [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) integrates ESLint into VS Code. If you are new to ESLint check the [documentation](http://eslint.org/).
-  - [ ] [ES7 React/Redux/GraphQL/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets) provides you JavaScript and React/Redux snippets in ES7 with Babel plugin features for VS Code.
-  - [ ] [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree) `(optional)` quickly searches (using ripgrep) your workspace for comment tags like TODO and FIXME, and displays them in a tree view in the explorer pane. Clicking a TODO within the tree will open the file and put the cursor on the line containing the TODO.
-  - [ ] [`vscode-icons`](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons) `(optional)` is more of a cosmetic thing, which brings icons to the Visual Studio Code editor.
+
+* [Git](https://git-scm.com/downloads)
+* [Node.js](https://nodejs.org/en/) (Please go with any latest LTS versions)
+* [Linux Based Terminal](https://gitforwindows.org/), if you're using Windows and installed with Git.
+* [Google Chrome](https://www.google.com/chrome/) or a decent latest web browser.
+* **[Visual Studio Code](https://code.visualstudio.com/)** is the go-to editor for some complex languages like React using JSX or TypeScript and I finally agreed with [Wes Bos](https://wesbos.com/) that VS Code is better for development of React JS. Obviously, with VS Code, you should be having the right extensions to support your React JS development, but comparing with Sublime Text 2, VS Code is still in its infancy. Get these extensions and here's my [dotfile](https://gist.github.com/praveenscience/ebb5439f31774ad2fdc14cb9e7de1fc0):
+  * [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) helps you to format your JavaScript / TypeScript / CSS using [Prettier](https://github.com/prettier/prettier).
+  * [Cobalt2 Theme Official](https://marketplace.visualstudio.com/items?itemName=wesbos.theme-cobalt2) is the theme used by Wes Bos, which comes with a nice user experience and a lot of awesome features. I am using a modified version of Cobalt2 that's a crossover between [Monokai](https://www.monokai.pro/) and Cobalt2.
+  * [GitLens - Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) supercharges the Git capabilities built into Visual Studio Code. It helps you to visualize code authorship at a glance via Git blame annotations and code lens, seamlessly navigate and explore Git repositories, gain valuable insights via powerful comparison commands, and so much more.
+  * [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory) helps you to view git log, file history, compare branches or commits inside VS Code.
+  * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) integrates ESLint into VS Code. If you are new to ESLint check the [documentation](http://eslint.org/).
+  * [ES7 React/Redux/GraphQL/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets) provides you JavaScript and React/Redux snippets in ES7 with Babel plugin features for VS Code.
+  * [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree) `(optional)` quickly searches (using ripgrep) your workspace for comment tags like TODO and FIXME, and displays them in a tree view in the explorer pane. Clicking a TODO within the tree will open the file and put the cursor on the line containing the TODO.
+  * [`vscode-icons`](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons) `(optional)` is more of a cosmetic thing, which brings icons to the Visual Studio Code editor.
   
 ### Installation Instructions
 
@@ -123,16 +124,25 @@ This project is part of the [GirlScript Summer of Code 2022](https://gssoc.girls
 **3. What is the deadline for any task submission?**
 *Mentors can assign issues to participants and also mention a deadline before which the issue is to be resolved. They can reassign issues in case of any delay, so be active and complete your tasks within the negotiated duration.*
 
+## Mini Leaderboard _A Proof of Concept from the Team_
+
+![Preview of Leaderboard](https://user-images.githubusercontent.com/1830380/162615338-09c9746c-c0f7-4a2e-b042-3e0447164390.png)
+
+We created a [Mini Leaderboard](https://h0m9hr.csb.app/) as a proof of concept for this project and the complete creation of the leaderboard has been explained in a Live Stream by Praveen. Here are those resources:
+
+* The [Mini Leaderboard](https://h0m9hr.csb.app/): Live app that uses GitHub's APIs to pull the real-time scores.
+* [Trailer](https://rb.gy/gitxip): What's the fuzz about this Mini Leaderboard, Proof of Concept.
+* [Workshop](https://rb.gy/zkxszj): Live coding by Praveen on how we created the above said leaderboard.
+
 ## Mentors
+
 [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/CatsInTech/Rezume) ![GitHub pull requests](https://img.shields.io/github/issues-pr-closed-raw/CatsInTech/Rezume?logo=git&logoColor=white)
 
-| GitHub Usernames                                     | Domain                     |
-| ---------------------------------------------------- | -------------------------- |
-| [@praveenscience](https://github.com/praveenscience) | Full Stack MERN / LAMP + Documentation |
-| [@priyadharshinir1894](https://github.com/priyadharshinir1894) | Full Stack + Cloud         |
-| [@vermakhushboo](https://github.com/vermakhushboo) | Full Stack         |
-| [@PrathibhaS](https://github.com/PrathibhaS) | Backend |
-| [@AnjaliSharma1234](https://github.com/AnjaliSharma1234) | Frontend + Documentation |
+| Name | GitHub Usernames                                     | Domain                     |
+| ---- | ---------------------------------------------------- | -------------------------- |
+| [Praveen Kumar Purushothaman](https://praveen.science/) | [@praveenscience](https://github.com/praveenscience) | Full Stack MERN / LAMP + Documentation |
+| [Abhipsa Guru](https://www.linkedin.com/in/abhipsa-guru-1316901a1) | [@AbhipsaGuru1012](https://github.com/AbhipsaGuru1012) | Full Stack Developer |
+| [Vishwa R](https://www.linkedin.com/in/vishwa08) | [@code-reaper08](https://github.com/code-reaper08) | Full Stack + JAM Stack |
 
 ## Project Admin
 
@@ -142,9 +152,10 @@ This project is part of the [GirlScript Summer of Code 2022](https://gssoc.girls
 | :----------------------------------------------------------: |
 | **[Praveen Kumar Purushothaman](https://praveen.science/)**  |
 
->**Need help?**
+> **Need help?**
+
 Feel free to contact me at [catsintech@praveen.science](mailto:catsintech@praveen.science).
 
 [![GitHub followers](https://img.shields.io/github/followers/praveenscience.svg?label=Follow%20@praveenscience&style=social)](https://github.com/praveenscience/) [![Twitter Follow](https://img.shields.io/twitter/follow/praveenscience?style=social)](https://twitter.com/praveenscience) 
 
-[![built with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/AnjaliSharma1234/)
+![built with love](https://forthebadge.com/images/badges/built-with-love.svg)
