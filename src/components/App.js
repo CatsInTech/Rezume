@@ -16,15 +16,34 @@ const App = () => {
         ProfilePicture: {
           Set: false,
           ProfileImage:
-            "https://cdn.nerdschalk.com/wp-content/uploads/2020/09/how-to-remove-profile-picture-on-zoom-12.png?width=150"
-        }
+            "https://cdn.nerdschalk.com/wp-content/uploads/2020/09/how-to-remove-profile-picture-on-zoom-12.png?width=150",
+        },
       },
-      Experience: [],
-      Education: [],
-      Awards: [],
-      Projects: [],
-      Skills: [],
-      Hobbies: [],
+      Skills: {
+        TechnicalSkills: "(optional) C++, c, JAVA",
+        SoftSkills: "(optional) Creative, Hardworking",
+      },
+      // Experience, Education, Awards, Projects object have the same item/Object member names --(Current, List) because in the FormELement.js we require this "Current" and "List" to render the form properly
+      Experiences: {
+        Current: 0,
+        List: [],
+      },
+      Awards: {
+        Current: 0,
+        List: [],
+      },
+      Projects: {
+        Current: 0,
+        List: [],
+      },
+      Educations: {
+        Current: 0,
+        List: [],
+      },
+      Hobbies: {
+        // The structure of Hobbies is so and not simply a string because in the Form.js it looks for an object and then it renders the elements inside the object
+        Hobbies: "(optional) Playing basketball, Music",
+      },
       Contact: {
         Email: "priya@cloudroit.co.uk",
         Website: "priya.ws",
@@ -38,7 +57,7 @@ const App = () => {
   const SetSection = (Section, Content) => {
     setAppState({
       ...appState,
-      Resume: { ...appState.Resume, [Section]: Content }
+      Resume: { ...appState.Resume, [Section]: Content },
     });
   };
   const SetSwitch = () => {
@@ -50,16 +69,16 @@ const App = () => {
           ...appState.Resume.About,
           ProfilePicture: {
             ...appState.Resume.About.ProfilePicture,
-            Set: !(appState.Resume.About.ProfilePicture.Set)
-          }
-        }
-      }
-    })
+            Set: !appState.Resume.About.ProfilePicture.Set,
+          },
+        },
+      },
+    });
   };
   const ImageHandler = (e) => {
     const reader = new FileReader();
     reader.onload = () => {
-      if(reader.readyState === 2){
+      if (reader.readyState === 2) {
         setAppState({
           ...appState,
           Resume: {
@@ -68,15 +87,15 @@ const App = () => {
               ...appState.Resume.About,
               ProfilePicture: {
                 ...appState.Resume.About.ProfilePicture,
-                ProfileImage: reader.result
-              }
-            }
-          }
-        })
+                ProfileImage: reader.result,
+              },
+            },
+          },
+        });
       }
-    }
-    reader.readAsDataURL(e.target.files[0])
-  }
+    };
+    reader.readAsDataURL(e.target.files[0]);
+  };
   return (
     <div className="rezume">
       <Header
@@ -87,7 +106,10 @@ const App = () => {
       <Main
         CurrentPage={appState.CurrentPage}
         Resume={appState.Resume}
+        ChangePage={ChangePage}
         SetSection={SetSection}
+        appState={appState}
+        setAppState={setAppState}
         SetSwitch={SetSwitch}
         ImageHandler={ImageHandler}
       />
