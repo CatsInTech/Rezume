@@ -1,6 +1,19 @@
-import React from "react";
+import React,{useState} from "react";
 
 const FormElement = ({ Label, Value, Type, onChange, onSwitch, ImageHandler }) => {
+  const [fix,setfix] = useState("");
+  const hoverClick=()=>{
+      onSwitch();
+      if (fix === "") {
+        setfix("yes");
+      }
+      else {
+        setfix("");
+      }
+  }
+
+
+
   return (
     <div className="rezume-forms-item">
       {(() => {
@@ -36,13 +49,13 @@ const FormElement = ({ Label, Value, Type, onChange, onSwitch, ImageHandler }) =
           case "Switch":
             return (
               <div className="form-check form-switch">
-                <div>
+                <div className="" onClick={hoverClick}>
                   <input
                     className="form-check-input"
                     type="checkbox"
                     role="switch"
                     id="flexSwitchCheckDefault"
-                    onChange={onSwitch}
+                    checked={fix}
                   />
                   <label className="form-check-label">
                     Add profile picture
