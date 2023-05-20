@@ -1,7 +1,13 @@
+
+@import './_varaible.scss';
+
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #e0e8e5;
+  background-color: $bg-color;
   @import "utils";
   @import "header";
   @import "main";
 }
+
+
+

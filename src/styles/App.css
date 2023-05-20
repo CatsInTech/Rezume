@@ -1,0 +1,296 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fffef9;
+}
+body .navbar {
+  background-color: #494949;
+  margin-bottom: 50px;
+  padding: 0.5rem;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+}
+body .navbar-brand {
+  font-weight: 300;
+  cursor: default;
+}
+body .navbar .nav-link {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  margin: 0.25rem 0.5rem;
+  outline: none;
+  padding: 0.65rem 1.25rem;
+  cursor: pointer;
+}
+body .rezume-main .rezume-forms {
+  margin-left: 20px;
+}
+body .rezume-main .rezume-forms-item {
+  padding-bottom: 15px;
+  position: relative;
+}
+body .rezume-main .rezume-forms-item span {
+  position: absolute;
+  font-size: 0.65em;
+  line-height: 1;
+  text-transform: uppercase;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
+  right: 10px;
+  top: 50%;
+  background-color: #fff;
+  transform: translateY(-50%);
+  margin-top: -7.5px;
+  padding: 3px;
+  opacity: 0;
+  transition: opacity 0.25s linear;
+  cursor: default;
+}
+body .rezume-main .rezume-forms-item span:hover {
+  opacity: 1;
+}
+body .rezume-main .rezume-forms-item .form-control {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  border: none;
+  padding: 12px;
+  height: auto;
+  font-size: 0.8em;
+}
+body .rezume-main .rezume-forms-item .form-control:hover + span {
+  opacity: 1;
+}
+body .rezume-main .rezume-forms-item .form-control:active, body .rezume-main .rezume-forms-item .form-control:focus {
+  outline: none;
+}
+body .rezume-main .rezume-forms-item .form-control:active + span, body .rezume-main .rezume-forms-item .form-control:focus + span {
+  display: none;
+}
+body .rezume-main .rezume-rezume {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 75px;
+  min-height: 80vh;
+  cursor: default;
+  margin-right: 20px;
+  position: relative;
+}
+body .rezume-main .rezume-rezume .project {
+  position: relative;
+  cursor: default;
+  margin: 1rem 0;
+  transition: all 0.5s ease-in-out;
+  padding: 0 10px;
+}
+body .rezume-main .rezume-rezume .project:hover {
+  box-shadow: 0 0 15px 2px rgb(221, 221, 221);
+}
+body .rezume-main .rezume-rezume .project:hover .project-delete {
+  opacity: 1;
+}
+body .rezume-main .rezume-rezume .project-delete {
+  display: flex;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  background-color: rgb(255, 63, 15);
+  border-radius: 10px;
+  top: 10px;
+  right: 10px;
+  padding: 0 10px;
+  transition: all 0.5s ease-in-out;
+}
+body .rezume-main .rezume-rezume .project-title {
+  font-weight: bold;
+  margin: 0;
+}
+body .rezume-main .rezume-rezume .project-techstack {
+  margin: 0;
+  color: #999;
+}
+body .rezume-main .rezume-rezume .project-summary {
+  margin: 0;
+}
+body .rezume-main .rezume-rezume .project-link {
+  margin: 1rem 2rem 1rem 0;
+  text-decoration: none;
+  font-weight: bold;
+}
+body .rezume-main .rezume-rezume .experience {
+  position: relative;
+  cursor: default;
+  margin: 1rem 0;
+  transition: all 0.5s ease-in-out;
+  padding: 0 10px;
+}
+body .rezume-main .rezume-rezume .experience:hover {
+  box-shadow: 0 0 15px 2px rgb(221, 221, 221);
+}
+body .rezume-main .rezume-rezume .experience:hover .experience-delete {
+  opacity: 1;
+}
+body .rezume-main .rezume-rezume .experience-delete {
+  display: flex;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  background-color: rgb(255, 63, 15);
+  border-radius: 10px;
+  top: 10px;
+  right: 10px;
+  padding: 0 10px;
+  transition: all 0.5s ease-in-out;
+}
+body .rezume-main .rezume-rezume .experience-title {
+  font-weight: bold;
+  margin: 0;
+}
+body .rezume-main .rezume-rezume .experience-subtitle {
+  margin: 0;
+  color: #999;
+}
+body .rezume-main .rezume-rezume .experience-subtitle span {
+  margin-right: 1rem;
+}
+body .rezume-main .rezume-rezume .experience-employer {
+  text-decoration: none;
+  margin: 0;
+}
+body .rezume-main .rezume-rezume .experience-location {
+  margin: 0;
+  color: #999;
+}
+body .rezume-main .rezume-rezume .experience-techstack {
+  margin: 0;
+  color: #999;
+}
+body .rezume-main .rezume-rezume .experience-summary {
+  margin: 0;
+}
+body .rezume-main .rezume-rezume .experience-link {
+  margin: 1rem 2rem 1rem 0;
+  text-decoration: none;
+  font-weight: bold;
+}
+body .rezume-main .rezume-rezume .skills {
+  margin: 0;
+  padding: 0 10px;
+}
+body .rezume-main .rezume-rezume .skills p {
+  margin: 0;
+}
+body .rezume-main .rezume-rezume .hobbies {
+  margin: 0;
+  padding: 0 10px;
+}
+body .rezume-main .rezume-rezume .award {
+  position: relative;
+  margin: 1rem 0;
+  transition: all 0.5s ease-in-out;
+  padding: 0 10px;
+}
+body .rezume-main .rezume-rezume .award:hover {
+  box-shadow: 0 0 15px 2px rgb(221, 221, 221);
+}
+body .rezume-main .rezume-rezume .award:hover .award-delete {
+  opacity: 1;
+}
+body .rezume-main .rezume-rezume .award-delete {
+  display: flex;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  background-color: rgb(255, 63, 15);
+  border-radius: 10px;
+  top: 10px;
+  right: 10px;
+  padding: 0 10px;
+  transition: all 0.5s ease-in-out;
+}
+body .rezume-main .rezume-rezume .award-desc {
+  margin: 0;
+}
+body .rezume-main .rezume-rezume .education {
+  position: relative;
+  cursor: default;
+  margin: 1rem 0;
+  transition: all 0.5s ease-in-out;
+  padding: 0 10px;
+}
+body .rezume-main .rezume-rezume .education:hover {
+  box-shadow: 0 0 15px 2px rgb(221, 221, 221);
+}
+body .rezume-main .rezume-rezume .education:hover .education-delete {
+  opacity: 1;
+}
+body .rezume-main .rezume-rezume .education-delete {
+  display: flex;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  background-color: rgb(255, 63, 15);
+  border-radius: 10px;
+  top: 10px;
+  right: 10px;
+  padding: 0 10px;
+  transition: all 0.5s ease-in-out;
+}
+body .rezume-main .rezume-rezume .education-qualification {
+  font-weight: bold;
+  margin: 0;
+}
+body .rezume-main .rezume-rezume .education-institute {
+  margin: 0;
+}
+body .rezume-main .rezume-rezume .education-subtitle {
+  margin: 0;
+  color: #999;
+}
+body .rezume-main .rezume-rezume .education-subtitle span {
+  margin-right: 1rem;
+}
+body .rezume-main .rezume-rezume .education-score {
+  margin: 0;
+}
+body .rezume-main .rezume-rezume-contact {
+  position: absolute;
+  right: 100px;
+  top: 75px;
+  text-align: right;
+}
+body .rezume-main .rezume-rezume-contact p {
+  margin: 0;
+  font-size: 0.85em;
+}
+body .rezume-main .rezume-rezume h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+body .rezume-main .rezume-rezume h3 span {
+  font-weight: 600;
+}
+body .rezume-main .rezume-rezume p {
+  line-height: 1.75;
+}
+body .rezume-main .rezume-rezume p.location {
+  color: #999;
+}
+body .rezume-main .rezume-rezume p.summary {
+  color: #666;
+  text-align: justify;
+}
+body .rezume-main .rezume-rezume p.summary strong.position {
+  font-weight: 600;
+  color: #000;
+  margin-right: 10px;
+}
+body .rezume-main .rezume-rezume p.summary-margin {
+  margin-top: 6rem;
+}
+body .rezume-main .rezume-rezume .profile-image {
+  position: relative;
+  top: -40px;
+  left: -30px;
+  border-radius: 50%;
+  margin: 0 10px 10px 0;
+  height: 10rem;
+  width: 10rem;
+}/*# sourceMappingURL=App.css.map */

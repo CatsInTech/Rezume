@@ -1,6 +1,7 @@
 .navbar {
-  background-color: #003100;
+  background-color: $nav-bar;
   margin-bottom: 50px;
+  padding: .5rem;
   @include box-shadow(3px, 0.25);
   &-brand {
     font-weight: 300;
@@ -10,6 +11,9 @@
     cursor: pointer;
     border: none;
     background-color: transparent;
+    margin:0.25rem 0.5rem;
     outline: none;
+    padding: 0.65rem 1.25rem;
+    cursor: pointer;
   }
 }
