@@ -1,29 +1,26 @@
-$nav-bar:#494949;
-$btn-bg-color:#1ABB9C;
-
-.container 
-{
+.container {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .container .loginform {
-  background-color: #394867 ;
+  background-color: #394867;
   width: 50vw;
   min-height: 45vh;
-  a{
-    color: white;
-  }
-  input {
-    border: none;
-    font-weight: normal;
-    border-radius: 0.15rem;
-  }
+}
+.container .loginform a {
+  color: white;
+}
+.container .loginform input {
+  border: none;
+  font-weight: normal;
+  border-radius: 0.15rem;
 }
 
 .inputSubmit {
-  background-color: $btn-bg-color;
+  background-color: #1ABB9C;
   color: white;
   padding: 0.85rem 1.95rem;
   margin: 0.85rem 1.25rem;
@@ -36,9 +33,11 @@ $btn-bg-color:#1ABB9C;
   justify-content: center;
   margin-top: 20px;
 }
+
 h1 {
   color: rgb(255, 255, 255);
 }
+
 .alert {
   color: #ff3131;
   text-align: left;
@@ -46,15 +45,10 @@ h1 {
   margin-left: 12rem;
   padding: 0px;
 }
+
 .inputEmail, .inputPassword {
-  margin: 1rem 0 ;
+  margin: 1rem 0;
   width: 60%;
   font-size: 1rem;
   padding: 0.5rem;
-  // margin-bottom: 0px;
-  // border-radius: 10px;
-  // outline-width: 0;
-  // width: 350px;
-  // padding: 0.4rem;
-}
-
+}/*# sourceMappingURL=index.css.map */
